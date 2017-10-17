@@ -1,0 +1,68 @@
+const byte bSensor = IN_4;
+const byte lSensor = IN_1;
+const byte rSensor = IN_2;
+const byte rMotor  = OUT_A;
+const byte lMotor  = OUT_B;
+
+const long sqUnit    = 630;
+const long lTurn    = 266.25; // 0.425 * 630 - 90 degree turn
+const long revTurn  = 535.5 ; // 0.85  * 630 - 180 degree turn
+  
+const int lMotorBias = 3;
+const int rMotorBias = 0;
+int state = -100;
+long lRot, rRot = 0;
+
+void setupNXT(){
+     SetSensorLight(bSensor);
+	 SetSensorLight(lSensor);
+	 SetSensorLight(rSensor);
+	 ResetTachoCount(OUT_AB);
+}
+
+int powerMotors(int dir, char pwr){
+	if (state != dir){
+	Off(OUT_AB);
+	ResetTachoCount(OUT_AB);
+	state = dir;	
+	}
+	switch (dir){
+		case -1: //backwards
+			OnRev(rMotor, pwr-rMotorBias);
+			OnRev(lMotor, pwr-lMotorBias);
+			break;
+		case 0:	//forwards
+			OnFwd(rMotor, pwr-rMotorBias);
+			OnFwd(lMotor, pwr-lMotorBias);
+			break;
+	
+		case 1:	//left
+			OnFwd(rMotor, pwr-rMotorBias);
+			OnRev(lMotor, pwr-lMotorBias);
+			break;
+		
+		case 2: //right
+			OnRev(rMotor, pwr-rMotorBias);
+			OnFwd(lMotor, pwr-lMotorBias);
+			break;
+		default:
+			Off(OUT_AB);
+			break;
+	}
+}
+
+bool readTacho(long thresh){
+	lRot = abs(MotorTachoCount(lMotor));
+	rRot = abs(MotorTachoCount(rMotor));
+	if ((lRot > thresh) && (rRot > thresh)){
+    return true;
+    }
+  else return false;
+}
+
+task main(){
+	setupNXT();
+	powerMotors(0, 50);
+ while (!readTacho(sqUnit)){}
+ Off(OUT_AB);
+}

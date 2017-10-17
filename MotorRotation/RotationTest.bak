@@ -1,0 +1,40 @@
+void RotMotors(long Angle){
+	long RotA;
+	long RotB;
+	bool aDone = false;
+	bool bDone = false;
+	 Off(OUT_AB);
+	ResetTachoCount(OUT_AB);
+	
+	OnFwd(OUT_A, 40);
+	OnRev(OUT_B, 40);
+	while (!aDone && !bDone){
+		RotA = MotorTachoCount(OUT_A);
+		RotB = MotorTachoCount(OUT_B);
+		if (RotA > Angle){
+			Off(OUT_A);
+			aDone = true;
+		}
+		if (RotB > -Angle){
+			Off(OUT_B);
+			bDone = true;
+		}
+	}
+	Off(OUT_AB);
+}
+
+
+
+task main(){
+	SetSensorTouch(IN_2);
+	SetSensorLight(IN_1); //right  A
+	SetSensorLight(IN_4); //left B
+	while (true){
+		RotMotors(-360);
+	/*	OnFwd(OUT_AB, 50);
+    Wait(250);
+    RotMotors(-180);
+    OnFwd(OUT_AB, 50);
+ */
+ }
+}

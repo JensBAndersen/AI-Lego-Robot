@@ -1,0 +1,87 @@
+  const byte bSensor = IN_4;
+  const byte lSensor = IN_1;
+  const byte rSensor = IN_2;
+  const int sqUnit    = 630;
+  const long lTurn    = 266.25; // 0.425 * 630 - 90 degree turn
+  const long revTurn  = 535.5 ; // 0.85  * 630 - 180 degree turn
+  
+  void mvSquare(int squares){
+	long RotA;
+	long RotB;
+	bool aDone = false;
+	bool bDone = false;
+  Off(OUT_AB);
+	ResetTachoCount(OUT_AB);
+	
+
+	OnRev(OUT_A, 60);
+	OnRev(OUT_B, 60-3);
+	while (!aDone && !bDone){
+		RotA = MotorTachoCount(OUT_A);
+		RotB = MotorTachoCount(OUT_B);
+
+		if (RotA < -(squares*sqUnit)){
+			Off(OUT_A);
+			aDone = true;
+		}
+		if (RotB < -(squares*sqUnit)){
+			Off(OUT_B);
+			bDone = true;
+		}
+
+	}
+	Off(OUT_AB);
+}
+
+  void RotMotors(long angle){
+	long RotA;
+	long RotB;
+
+	bool aDone = false;
+	bool bDone = false;
+  bool lineTrig = false;
+	int sensIn = 0;
+  int count = 0;
+  Off(OUT_AB);
+	ResetTachoCount(OUT_AB);
+
+	OnFwd(OUT_A, 50);
+	OnRev(OUT_B, 50-3);
+	while ((!aDone && !bDone) || (!lineTrig)) {
+		RotA = MotorTachoCount(OUT_A);
+		RotB = MotorTachoCount(OUT_B);
+    sensIn = SensorValue(bSensor);
+		
+		if (RotA > angle){
+			Off(OUT_A);
+			aDone = true;
+		}
+		if (RotB > angle){
+			Off(OUT_B);
+			bDone = true;
+		}
+		
+    if ((sensIn < 55)&& (count > 500)) {
+       lineTrig = true;
+    }
+    count++;
+	}
+	while(!lineTrig){
+  sensIn = SensorValue(bSensor);
+    if (sensIn < 55) {
+       lineTrig = true;
+    }
+
+     	OnFwd(OUT_A, 30);
+	    OnRev(OUT_B, 30-3);
+	}
+	Off(OUT_AB);
+}
+
+task main(){
+     SetSensorLight(b);
+     RotMotors(lTurn);
+     RotMotors(lTurn);
+     
+
+}

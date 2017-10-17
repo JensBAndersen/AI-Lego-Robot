@@ -1,0 +1,454 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0readTacho	5	1	0	4	4
+1	__D0SetSensorLight_inline_setupNXT	6	1	4	4	9
+2	__DU0SetSensorLight_inline_setupNXT	5	1	8	4	6
+3	__DU0main	5	1	12	4	2
+4	__D0powerMotors	6	1	16	4	24
+5	__D0readTacho	6	1	20	4	12
+6	lRot	6	1	24	4	2
+7	rRot	6	1	28	4	2
+8	__readTacho_7qG2_thresh_7qG2_000	6	1	32	4	3
+9	__signed_stack_001powerMotors	6	1	36	4	2
+10	__signed_stack_001readTacho	6	1	40	4	4
+11	__signed_stack_002readTacho	6	1	44	4	2
+12	lMotorBias	4	0	48	2	4
+13	__powerMotors_7qG2_dir_7qG2_000	4	1	50	2	4
+14	rMotorBias	4	1	52	2	4
+15	state	4	0	54	2	2
+16	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	56	1	6
+17	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	57	1	6
+18	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	58	1	6
+19	__setupNXT_return	1	1	59	1	3
+20	__SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT	1	1	60	1	15
+21	__SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT	1	1	61	1	6
+22	__constValNeg1	2	0	62	1	1
+23	__constVal63	2	0	63	1	11
+24	____initialize_global_data_return	1	1	64	1	3
+25	__readTacho_return	1	1	65	1	5
+26	__constVal96	2	0	66	1	11
+27	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	67	1	3
+28	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	68	1	6
+29	__powerMotors_return	1	1	69	1	3
+30	__powerMotors_7qG2_pwr_7qG2_000	2	1	70	1	9
+31	__OnRev_Tmp	2	1	71	1	8
+32	____ResetSensorSubroutine_return	1	1	72	1	5
+33	__constVal2	2	0	73	1	1
+34	__ResetSensorTmp	1	1	74	1	2
+35	__zfreadTacho	1	1	75	1	7
+36	__zfmain	1	1	76	1	2
+37	__constVal8	2	0	77	1	2
+38	__zfpowerMotors	1	1	78	1	3
+39	__PFTmp	1	1	79	1	1
+40	rMotor	1	1	80	1	5
+41	__constVal1	2	0	81	1	5
+42	__constVal32	2	0	82	1	33
+43	lMotor	1	0	83	1	5
+44	__ResetSensorPort	1	1	84	1	5
+45	__zfSetSensorLight_inline_setupNXT	1	1	85	1	6
+46	__constVal0	2	1	86	1	37
+47	__constVal3	2	0	87	1	11
+48	__OUT_AB	7	0	88	4	5
+49	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	63	0	#line 63 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	64	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	63	2	#line 63 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	64	2	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	2		subcall setupNXT, __setupNXT_return
+0	64	4	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	64	4	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	4		set __powerMotors_7qG2_dir_7qG2_000, 0
+0	64	7	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	64	7	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	7		set __powerMotors_7qG2_pwr_7qG2_000, 50
+0	64	10	#line 64 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	10	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	10		subcall powerMotors, __powerMotors_return
+0	65	12	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	12	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	12	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	12		set __readTacho_7qG2_thresh_7qG2_000, 480
+0	65	15	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	15	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	15		subcall readTacho, __readTacho_return
+0	65	17	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	65	17	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	17		not __DU0main, __DU0readTacho
+0	65	20	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	20		tst 5, __zfmain, __DU0main
+0	65	23	#line 65 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	66	23		brtst 4, __NXC_Label_549, __zfmain
+0	66	26	#line 66 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	67	26		jmp __NXC_Label_548
+0	66	28	#line 66 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	69	28	#line 69 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	70	28	#pragma macro 7
+0	70	28		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4257	51	#line 4257 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	69	51	#line 69 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+0	70	51		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	16	0	#line 16 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	17	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 3
+2	16	3	#line 16 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	17	3	#line 17 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	18	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	3729	5	#line 3729 "NXCDefs.h"
+2	3730	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3729	7	#line 3729 "NXCDefs.h"
+2	3729	7	#line 3729 "NXCDefs.h"
+2	3730	7		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	3729	9	#line 3729 "NXCDefs.h"
+2	3730	9		tst 5, __zfSetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	3729	12	#line 3729 "NXCDefs.h"
+2	3730	12		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_setupNXT
+2	3729	15	#line 3729 "NXCDefs.h"
+2	3730	15		set __D0SetSensorLight_inline_setupNXT, 5
+2	3729	18	#line 3729 "NXCDefs.h"
+2	3730	18		jmp __001__NXC_Label_5
+2	3729	20	#line 3729 "NXCDefs.h"
+2	3730	20		set __D0SetSensorLight_inline_setupNXT, 6
+2	3729	23	#line 3729 "NXCDefs.h"
+2	3730	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __D0SetSensorLight_inline_setupNXT
+2	3663	25	#line 3663 "NXCDefs.h"
+2	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	3663	29	#line 3663 "NXCDefs.h"
+2	3730	29	#line 3730 "NXCDefs.h"
+2	3730	29	#line 3730 "NXCDefs.h"
+2	3731	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3730	31	#line 3730 "NXCDefs.h"
+2	3730	31	#line 3730 "NXCDefs.h"
+2	3731	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	3730	34	#line 3730 "NXCDefs.h"
+2	3676	34	#line 3676 "NXCDefs.h"
+2	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	3676	38	#line 3676 "NXCDefs.h"
+2	3731	38	#line 3731 "NXCDefs.h"
+2	3731	38	#line 3731 "NXCDefs.h"
+2	3732	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3731	40	#line 3731 "NXCDefs.h"
+2	3694	40	#line 3694 "NXCDefs.h"
+2	3695	40	#pragma macro 4
+2	3695	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	3787	44	#line 3787 "NXCDefs.h"
+2	3694	44	#line 3694 "NXCDefs.h"
+2	3732	44	#line 3732 "NXCDefs.h"
+2	17	44	#line 17 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	17	44	#line 17 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	18	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 0
+2	17	47	#line 17 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	18	47	#line 18 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	19	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	3729	49	#line 3729 "NXCDefs.h"
+2	3730	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3729	51	#line 3729 "NXCDefs.h"
+2	3729	51	#line 3729 "NXCDefs.h"
+2	3730	51		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	3729	53	#line 3729 "NXCDefs.h"
+2	3730	53		tst 5, __zfSetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	3729	56	#line 3729 "NXCDefs.h"
+2	3730	56		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_setupNXT
+2	3729	59	#line 3729 "NXCDefs.h"
+2	3730	59		set __D0SetSensorLight_inline_setupNXT, 5
+2	3729	62	#line 3729 "NXCDefs.h"
+2	3730	62		jmp __002__NXC_Label_5
+2	3729	64	#line 3729 "NXCDefs.h"
+2	3730	64		set __D0SetSensorLight_inline_setupNXT, 6
+2	3729	67	#line 3729 "NXCDefs.h"
+2	3730	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __D0SetSensorLight_inline_setupNXT
+2	3663	69	#line 3663 "NXCDefs.h"
+2	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	3663	73	#line 3663 "NXCDefs.h"
+2	3730	73	#line 3730 "NXCDefs.h"
+2	3730	73	#line 3730 "NXCDefs.h"
+2	3731	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3730	75	#line 3730 "NXCDefs.h"
+2	3730	75	#line 3730 "NXCDefs.h"
+2	3731	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	3730	78	#line 3730 "NXCDefs.h"
+2	3676	78	#line 3676 "NXCDefs.h"
+2	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	3676	82	#line 3676 "NXCDefs.h"
+2	3731	82	#line 3731 "NXCDefs.h"
+2	3731	82	#line 3731 "NXCDefs.h"
+2	3732	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3731	84	#line 3731 "NXCDefs.h"
+2	3694	84	#line 3694 "NXCDefs.h"
+2	3695	84	#pragma macro 4
+2	3695	84		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	3854	88	#line 3854 "NXCDefs.h"
+2	3694	88	#line 3694 "NXCDefs.h"
+2	3732	88	#line 3732 "NXCDefs.h"
+2	18	88	#line 18 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	18	88	#line 18 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	19	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 1
+2	18	91	#line 18 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	19	91	#line 19 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	20	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	3729	93	#line 3729 "NXCDefs.h"
+2	3730	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3729	95	#line 3729 "NXCDefs.h"
+2	3729	95	#line 3729 "NXCDefs.h"
+2	3730	95		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	3729	97	#line 3729 "NXCDefs.h"
+2	3730	97		tst 5, __zfSetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	3729	100	#line 3729 "NXCDefs.h"
+2	3730	100		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_setupNXT
+2	3729	103	#line 3729 "NXCDefs.h"
+2	3730	103		set __D0SetSensorLight_inline_setupNXT, 5
+2	3729	106	#line 3729 "NXCDefs.h"
+2	3730	106		jmp __003__NXC_Label_5
+2	3729	108	#line 3729 "NXCDefs.h"
+2	3730	108		set __D0SetSensorLight_inline_setupNXT, 6
+2	3729	111	#line 3729 "NXCDefs.h"
+2	3730	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __D0SetSensorLight_inline_setupNXT
+2	3663	113	#line 3663 "NXCDefs.h"
+2	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	3663	117	#line 3663 "NXCDefs.h"
+2	3730	117	#line 3730 "NXCDefs.h"
+2	3730	117	#line 3730 "NXCDefs.h"
+2	3731	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3730	119	#line 3730 "NXCDefs.h"
+2	3730	119	#line 3730 "NXCDefs.h"
+2	3731	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	3730	122	#line 3730 "NXCDefs.h"
+2	3676	122	#line 3676 "NXCDefs.h"
+2	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	3676	126	#line 3676 "NXCDefs.h"
+2	3731	126	#line 3731 "NXCDefs.h"
+2	3731	126	#line 3731 "NXCDefs.h"
+2	3732	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3731	128	#line 3731 "NXCDefs.h"
+2	3694	128	#line 3694 "NXCDefs.h"
+2	3695	128	#pragma macro 4
+2	3695	128		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	3921	132	#line 3921 "NXCDefs.h"
+2	3694	132	#line 3694 "NXCDefs.h"
+2	3732	132	#line 3732 "NXCDefs.h"
+2	19	132	#line 19 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	20	132	#line 20 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	21	132	#pragma macro 7
+2	21	132		setout __OUT_AB, 0, __constVal8
+2	3926	137	#line 3926 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	20	137	#line 20 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	22	137	#line 22 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+2	23	137		subret __setupNXT_return
+3	23	0	#line 23 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	24	0		mov __signed_stack_001powerMotors, state
+3	23	2	#line 23 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	23	2	#line 23 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	24	2		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	23	4	#line 23 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	24	4		cmp 5, __zfpowerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	23	8	#line 23 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	24	8		mov __D0powerMotors, __zfpowerMotors
+3	24	10	#line 24 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	25	10		brtst 4, __NXC_Label_497, __zfpowerMotors
+3	25	13	#line 25 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	26	13	#pragma macro 7
+3	26	13		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	3956	36	#line 3956 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	25	36	#line 25 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	26	36	#line 26 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	27	36	#pragma macro 7
+3	27	36		setout __OUT_AB, 0, __constVal8
+3	3959	41	#line 3959 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	26	41	#line 26 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	27	41	#line 27 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	28	41		mov state, __powerMotors_7qG2_dir_7qG2_000
+3	27	43	#line 27 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	27	43	#line 27 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	28	43	#line 28 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	28	43	#line 28 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	29	43		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	32	45		brcmp 4, __NXC_Label_503, __constValNeg1, __D0powerMotors
+3	33	49		brcmp 4, __NXC_Label_508, __constVal0, __D0powerMotors
+3	34	53		brcmp 4, __NXC_Label_513, __constVal1, __D0powerMotors
+3	35	57		brcmp 4, __NXC_Label_518, __constVal2, __D0powerMotors
+3	36	61		jmp __NXC_Label_523
+3	37	63		jmp __NXC_Label_502
+3	30	65	#line 30 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	30	65	#line 30 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	30	65	#line 30 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	30	65	#line 30 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	30	65	#line 30 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	65		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, rMotorBias
+3	31	69	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	32	69	#pragma macro 7
+3	32	69		setout rMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	3993	92	#line 3993 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	92	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	92	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	92	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	92	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	31	92	#line 31 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	32	92		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, lMotorBias
+3	32	96	#line 32 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	33	96	#pragma macro 7
+3	33	96		setout lMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4006	119	#line 4006 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	32	119	#line 32 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	33	119	#line 33 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	119		jmp __NXC_Label_502
+3	33	121	#line 33 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	121	#line 34 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	121	#line 34 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	121	#line 34 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	121	#line 34 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	34	121	#line 34 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	121		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, rMotorBias
+3	35	125	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	36	125	#pragma macro 10
+3	36	125		neg __OnRev_Tmp, __D0powerMotors
+3	36	128		setout rMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4024	151	#line 4024 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	151	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	151	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	151	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	151	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	35	151	#line 35 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	36	151		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, lMotorBias
+3	36	155	#line 36 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	37	155	#pragma macro 10
+3	37	155		neg __OnRev_Tmp, __D0powerMotors
+3	37	158		setout lMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4037	181	#line 4037 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	36	181	#line 36 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	38	181	#line 38 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	181		jmp __NXC_Label_502
+3	38	183	#line 38 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	183	#line 39 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	183	#line 39 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	183	#line 39 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	183	#line 39 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	39	183	#line 39 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	183		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, rMotorBias
+3	40	187	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	41	187	#pragma macro 7
+3	41	187		setout rMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4055	210	#line 4055 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	210	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	210	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	210	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	210	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	40	210	#line 40 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	41	210		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, lMotorBias
+3	41	214	#line 41 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	42	214	#pragma macro 10
+3	42	214		neg __OnRev_Tmp, __D0powerMotors
+3	42	217		setout lMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4068	240	#line 4068 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	41	240	#line 41 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	43	240	#line 43 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	240		jmp __NXC_Label_502
+3	43	242	#line 43 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	242	#line 44 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	242	#line 44 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	242	#line 44 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	242	#line 44 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	44	242	#line 44 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	242		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, rMotorBias
+3	45	246	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	46	246	#pragma macro 10
+3	46	246		neg __OnRev_Tmp, __D0powerMotors
+3	46	249		setout rMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4086	272	#line 4086 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	272	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	272	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	272	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	272	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	45	272	#line 45 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	46	272		sub __D0powerMotors, __powerMotors_7qG2_pwr_7qG2_000, lMotorBias
+3	46	276	#line 46 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	47	276	#pragma macro 7
+3	47	276		setout lMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4099	299	#line 4099 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	46	299	#line 46 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	47	299	#line 47 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	48	299		jmp __NXC_Label_502
+3	47	301	#line 47 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	48	301	#line 48 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	49	301	#line 49 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	50	301	#pragma macro 7
+3	50	301		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4107	324	#line 4107 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	49	324	#line 49 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	50	324	#line 50 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	50	324	#line 50 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	53	324	#line 53 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	53	324	#line 53 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+3	54	324		subret __powerMotors_return
+4	54	0	#line 54 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	55	0		getout __D0readTacho, lMotor, 4
+4	55	4	#line 55 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	4		abs lRot, __D0readTacho
+4	55	7	#line 55 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	55	7	#line 55 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	55	7	#line 55 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	7		getout __D0readTacho, rMotor, 4
+4	56	11	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	11		abs rRot, __D0readTacho
+4	56	14	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	14	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	14	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	14		mov __signed_stack_001readTacho, lRot
+4	56	16	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	16	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	16		mov __D0readTacho, __readTacho_7qG2_thresh_7qG2_000
+4	56	18	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	18		cmp 1, __zfreadTacho, __signed_stack_001readTacho, __D0readTacho
+4	56	22	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	22		mov __D0readTacho, __zfreadTacho
+4	56	24	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	24		brtst 4, __NXC_Label_533, __zfreadTacho
+4	56	27	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	27		mov __signed_stack_001readTacho, __D0readTacho
+4	56	29	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	29		mov __signed_stack_002readTacho, rRot
+4	56	31	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	31	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	31		mov __D0readTacho, __readTacho_7qG2_thresh_7qG2_000
+4	56	33	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	33		cmp 1, __zfreadTacho, __signed_stack_002readTacho, __D0readTacho
+4	56	37	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	56	37	#line 56 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	57	37		and __D0readTacho, __signed_stack_001readTacho, __zfreadTacho
+4	57	41	#line 57 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	58	41		tst 5, __zfreadTacho, __D0readTacho
+4	57	44	#line 57 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	58	44		brtst 4, __NXC_Label_538, __zfreadTacho
+4	58	47	#line 58 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	59	47		set __DU0readTacho, 1
+4	58	50	#line 58 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	58	50	#line 58 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	59	50		subret __readTacho_return
+4	58	52	#line 58 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	59	52	#line 59 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	60	52		jmp __NXC_Label_541
+4	60	54	#line 60 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	61	54		set __DU0readTacho, 0
+4	60	57	#line 60 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	60	57	#line 60 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	61	57		subret __readTacho_return
+4	60	59	#line 60 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	60	59	#line 60 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	62	59	#line 62 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+4	63	59		subret __readTacho_return
+5	72	0	#line 72 "D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC"
+5	73	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC
+1	__ResetSensorSubroutine	54	NXTDefs.h
+2	setupNXT	67	D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC
+3	powerMotors	206	D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC
+4	readTacho	532	D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC
+5	__initialize_global_data	593	D:\Projects\GitHub\AI-Sokoban\MotorRotation\RotationV2.NXC

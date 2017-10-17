@@ -1,0 +1,41 @@
+const byte bSensor = IN_4;
+const byte lSensor = IN_1;
+const byte rSensor = IN_2;
+
+void setupNXT(){
+     SetSensorLight(bSensor);
+	 SetSensorLight(lSensor);
+	 SetSensorLight(rSensor);
+}
+
+bool RotMotors(long Angle){
+	long RotA;
+	long RotB;
+	bool aDone = false;
+	bool bDone = false;
+	 Off(OUT_AB);
+	ResetTachoCount(OUT_AB);
+	
+	OnFwd(OUT_A, 40);
+	OnRev(OUT_B, 40);
+	while (!aDone && !bDone){
+		RotA = MotorTachoCount(OUT_A);
+		RotB = MotorTachoCount(OUT_B);
+		if (RotA > Angle){
+			Off(OUT_A);
+			aDone = true;
+		}
+		if (RotB > -Angle){
+			Off(OUT_B);
+			bDone = true;
+		}
+	}
+	Off(OUT_AB);
+	return true;
+}
+  
+task main{
+	setupNXT();
+	
+	
+}
