@@ -1,0 +1,28 @@
+const int Black1 = 40;
+const int Black2 = 45;
+const int Black4 = 45;
+
+bool SensorLeft = false;
+bool SensorRight = false;
+bool SensorBack = false;
+
+void followLine(){
+  int bufferRight = 65 - Sensor(IN_1);
+  int buffeLeft = 73 - Sensor(IN_2);
+
+  OnRev(OUT_A, 20 + bufferRight);
+  OnRev(OUT_B, 20-3 + buffeLeft);
+
+
+}
+
+task main(){
+SetSensorTouch(IN_2);
+SetSensorLight(IN_1); //left  1
+SetSensorLight(IN_2); //right 2
+SetSensorLight(IN_4); //back 4
+
+  while(true){
+    followLine();
+  }
+}
