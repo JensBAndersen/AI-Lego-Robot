@@ -119,12 +119,26 @@ bool turnStatus(){
 
 void lTurn(){
   bool finish = false;
-  powerMotors(1, 70);
+  powerMotors(1, 50);
   Wait(200);
   while(!finish){
-	finish = turnStatus();
+      finish = turnStatus();
   }
+  powerMotors(2, 50);
+  Wait(5);
 }
+
+void rTurn(){
+  bool finish = false;
+  powerMotors(2, 50);
+  Wait(200);
+  while(!finish){
+      finish = turnStatus();
+  }
+  powerMotors(1, 50);
+  Wait(5);
+}
+
 void oneSquareV2(){
 	   powerMotors(0, 75);
      Wait(200);
@@ -144,10 +158,12 @@ void oneSquareV2(){
 
 task main(){
 	setupNXT();
-/*  oneSquareV2();
-  lTurn();   */
-  powerMotors(1,95);
-  Wait(5000);
+	while(1){
+ oneSquareV2();
+  rTurn();
+  }
+  //powerMotors(1,95);
+  //Wait(5000);
  Off(OUT_AB);
 }
 
