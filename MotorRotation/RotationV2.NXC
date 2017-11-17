@@ -91,15 +91,19 @@ bool running = true;
        if ( (Sensor(lSensor) < 55)  && (Sensor(rSensor) < 55) ){running = false;}
 
  }
- powerMotors(10,0);
+
+
+ powerMotors(0,20);
+ ResetRotationCount(OUT_AB);
  while(!readTacho(200)){
- powerMotors(0,35);
+
  }
 }
 
 task main(){
 	setupNXT();
   oneSquare();
-
+  oneSquare();
+  oneSquare();
  Off(OUT_AB);
 }

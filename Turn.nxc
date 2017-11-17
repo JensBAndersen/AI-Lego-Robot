@@ -6,7 +6,6 @@ bool SensorLeft = false;
 bool SensorRight = false;
 bool SensorBack = false;
 
-
 bool Turn(){
   
   if(Sensor(IN_1) < Black1){SensorLeft = true;} //A
@@ -18,9 +17,9 @@ bool Turn(){
     SensorLeft = false;
     SensorRight = false;
     SensorBack = false;
-    return false;
-  }
-  return true;
+    return true;
+  }else
+  return return;
 }
 
 task main(){

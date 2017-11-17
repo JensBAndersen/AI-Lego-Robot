@@ -1,6 +1,7 @@
 const byte bSensor = IN_4;
 const byte lSensor = IN_1;
 const byte rSensor = IN_2;
+
 const byte rMotor  = OUT_A;
 const byte lMotor  = OUT_B;
 
@@ -13,6 +14,10 @@ const int rMotorBias = 0;
 int state = -100;
 long lRot, rRot = 0;
 
+bool SensorLeft = false;
+bool SensorRight = false;
+bool SensorBack = false;
+
 void setupNXT(){
      SetSensorLight(bSensor);
 	 SetSensorLight(lSensor);
@@ -23,17 +28,19 @@ void setupNXT(){
 int powerMotors(int dir, char pwr){
 	if (state != dir){
 	Off(OUT_AB);
-	ResetTachoCount(OUT_AB);
-	state = dir;	
+	ResetRotationCount(OUT_AB);
+	state = dir;
+  lRot = 0;
+  rRot = 0;
 	}
 	switch (dir){
 		case -1: //backwards
-			OnRev(rMotor, pwr-rMotorBias);
-			OnRev(lMotor, pwr-lMotorBias);
-			break;
-		case 0:	//forwards
 			OnFwd(rMotor, pwr-rMotorBias);
 			OnFwd(lMotor, pwr-lMotorBias);
+			break;
+		case 0:	//forwards
+			OnRev(rMotor, pwr-rMotorBias);
+			OnRev(lMotor, pwr-lMotorBias);
 			break;
 	
 		case 1:	//left
@@ -51,18 +58,48 @@ int powerMotors(int dir, char pwr){
 	}
 }
 
+/*void checkSensor(){
+  if(Sensor(IN_1) < Black1){SensorLeft = true;} //A
+  if(Sensor(IN_2) < Black2){SensorRight = true;} //B
+  if(Sensor(IN_4) < Black4){SensorBack = true;} //C
+} */
+void followLine(long pwr = 40){
+  int bufferRight = 65 - Sensor(IN_1);
+  int buffeLeft = 73 - Sensor(IN_2);
+
+  OnRev(OUT_A, pwr + bufferRight);
+  OnRev(OUT_B, pwr-3 + buffeLeft);
+
+}
+
+
 bool readTacho(long thresh){
-	lRot = abs(MotorTachoCount(lMotor));
-	rRot = abs(MotorTachoCount(rMotor));
+	lRot = labs(MotorRotationCount(OUT_A));
+	rRot = labs(MotorRotationCount(OUT_B));
+	
 	if ((lRot > thresh) && (rRot > thresh)){
     return true;
     }
   else return false;
 }
 
+void oneSquare(){
+powerMotors(0, 50);
+bool running = true;
+ while (running){
+       followLine();
+       if ( (Sensor(lSensor) < 55)  && (Sensor(rSensor) < 55) ){running = false;}
+
+ }
+ powerMotors(10,0);
+ while(!readTacho(200)){
+ powerMotors(0,35);
+ }
+}
+
 task main(){
 	setupNXT();
-	powerMotors(0, 50);
- while (!readTacho(sqUnit)){}
+  oneSquare();
+
  Off(OUT_AB);
 }

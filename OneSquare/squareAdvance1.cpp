@@ -11,9 +11,9 @@ const int Black4 = 20;
 
 
 const long sqUnit    = 630;
-const long lhTurn    = 266.25; // 0.425 * 630 - 90 degree turn
+const long lTurn    = 266.25; // 0.425 * 630 - 90 degree turn
 const long revTurn  = 535.5 ; // 0.85  * 630 - 180 degree turn
-
+  
 const int lMotorBias = 3;
 const int rMotorBias = 0;
 int moveDir = -100;
@@ -69,7 +69,7 @@ void followLine(long pwr = 40){
   int bufferRight = 32-Sensor(IN_1);
   int buffeLeft   = 34-Sensor(IN_2);
   if (moveDir ==0){
-
+  
      OnFwd(OUT_A, pwr + bufferRight);
      OnFwd(OUT_B, pwr-3 + buffeLeft);
   }
@@ -83,7 +83,7 @@ void followLine(long pwr = 40){
 bool readRotation(long thresh){
 	lRot = labs(MotorRotationCount(OUT_A));
 	rRot = labs(MotorRotationCount(OUT_B));
-
+	
 	if ((lRot > thresh) && (rRot > thresh)){
     return true;
     }
@@ -119,7 +119,7 @@ bool turnStatus(){
 
 void lTurn(){
   bool finish = false;
-  powerMotors(1, 70);
+  powerMotors(1, 50);
   Wait(200);
   while(!finish){
 	finish = turnStatus();
@@ -139,15 +139,11 @@ void oneSquareV2(){
         ResetRotationCount(OUT_AB);
         Wait(1);
         smallAdvance();
-        Wait(1);
       }
 
 task main(){
 	setupNXT();
-/*  oneSquareV2();
-  lTurn();   */
-  powerMotors(1,95);
-  Wait(5000);
+  oneSquareV2();
+
  Off(OUT_AB);
 }
-
