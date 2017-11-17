@@ -1,0 +1,17 @@
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe.config
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.pdb
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csprojResolveAssemblyReference.cache
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csproj.CoreCompileInputs.cache
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.exe
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.pdb
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\NUnit3.TestAdapter.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.api.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Pdb.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Mdb.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Rocks.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.dll
+c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.xml
