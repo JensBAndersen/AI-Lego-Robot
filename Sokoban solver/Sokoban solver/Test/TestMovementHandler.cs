@@ -48,13 +48,13 @@ namespace Sokoban_solver.Test
             Assert.AreEqual(test.TestreadMap(test.posistion), "P");
             Assert.AreEqual(test.posistion[0], 1);
             Assert.AreEqual(test.posistion[1], 1);
-            Assert.AreEqual(test.Moves, "");
+            Assert.AreNotEqual(test.Moves, "F");
 
             test.makeMove("B");
             Assert.AreEqual(test.TestreadMap(test.posistion), "P");
             Assert.AreEqual(test.posistion[0], 1);
             Assert.AreEqual(test.posistion[1], 1);
-            Assert.AreEqual(test.Moves, "");
+            Assert.AreNotEqual(test.Moves, "B");
 
         }
 
@@ -66,18 +66,18 @@ namespace Sokoban_solver.Test
             test.makeMove("R");
             var teststring = test.TestreadMap(test.posistion);
             Assert.AreEqual(teststring, "P");
-            Assert.AreEqual(test.posistion[0], 1);
-            Assert.AreEqual(test.posistion[1], 1);
-            Assert.AreEqual(test.Moves, "");
+            Assert.AreEqual(1, test.posistion[0]);
+            Assert.AreEqual(2, test.posistion[1]);
+            Assert.AreEqual(test.Moves, "R");
 
             test = new MovementHandler(map, startPosition);
 
             test.makeMove("L");
             teststring = test.TestreadMap(test.posistion);
             Assert.AreEqual(teststring, "P");
-            Assert.AreEqual(test.posistion[0], 1);
-            Assert.AreEqual(test.posistion[1], 0);
-            Assert.AreEqual(test.Moves, "");
+            Assert.AreEqual(1, test.posistion[0]);
+            Assert.AreEqual(0, test.posistion[1]);
+            Assert.AreEqual(test.Moves, "L");
 
         }
 
@@ -102,6 +102,19 @@ namespace Sokoban_solver.Test
             Assert.AreEqual(test.TestreadMap(new int[] { 0, 1 }), "D");
 
             Assert.AreEqual(test.TestreadMap(new int[] { 2, 1 }), "W");
+
+
+        }
+
+        [Test]
+        public void SaveMovesTest()
+        {
+            var test = new MovementHandler(map, startPosition);
+            test.makeMove("R");
+            test.makeMove("B");
+            test.makeMove("R");
+
+            Assert.AreEqual("RBR", test.Moves);
 
 
         }

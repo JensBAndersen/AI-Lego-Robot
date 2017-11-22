@@ -18,84 +18,74 @@ namespace Sokoban_solver
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ListOfStates.Add(new State(map));
 
-            int[] startPosition = new int[2] { 1, 1 };
 
-            Console.WriteLine("Posistion: " + MapHandler.readMap(startPosition));
-            Console.ReadLine();
-
-            //int[] newPosition = MovementHandler.makeMove(startPosition, "L");
-
-            //nextStep(startPosition);
-
-            Console.ReadLine();
-
-            //position = MovementHandler.makeMove(startPosition, "F");
-            //Console.WriteLine("Posistion: " + MapHandler.readMap(position));
-            //Console.WriteLine(position[0] + " " + position[1]);
-            Console.ReadLine();
         }
 
-        //private static List<int[]> nextStep(int[] position)
-        //{
-        //    List<int[]> list = new List<int[]>();
-
-        //    int[] newPositionUP = MovementHandler.makeMove(position, "F");
-        //    if(Enumerable.SequenceEqual(newPositionUP, position))
-        //    {
-        //        if (isStateSaved())
-        //        {
-
-        //        }
-        //        ListOfStates.Add(new State());
-        //        list.Add(newPositionUP);
-        //    }
-
-
-        //    int[] newPositionDOWN = MovementHandler.makeMove(position, "B");
-        //    if (Enumerable.SequenceEqual(newPositionDOWN, position))
-        //    {
-        //        list.Add(newPositionDOWN);
-        //    }
-
-        //    int[] newPositionRIGHT = MovementHandler.makeMove(position, "R");
-        //    if (Enumerable.SequenceEqual(newPositionRIGHT, position))
-        //    {
-        //        list.Add(newPositionRIGHT);
-        //    }
-
-        //    int[] newPositionLEFT = MovementHandler.makeMove(position, "L");
-        //    if (Enumerable.SequenceEqual(newPositionLEFT, position))
-        //    {
-        //        list.Add(newPositionLEFT);
-        //    }
-
-        //    return list;
-        //}
-
-        private static bool isStateSaved(State state)
+        public static List<MovementHandler> nextSteps(MovementHandler obj)
         {
-            foreach (State item in ListOfStates)
+            List<MovementHandler> list = new List<MovementHandler>();
+            int[] oldposition = (int[])obj.posistion.Clone();
+
+
+            MovementHandler newObjUP = obj;
+            newObjUP.makeMove("F");
+            if (!Enumerable.SequenceEqual(oldposition, newObjUP.posistion))
             {
-                var equal = item.mapstate.Rank == state.mapstate.Rank &&
-                        Enumerable.Range(0, item.mapstate.Rank).All(dimension => item.mapstate.GetLength(dimension) == state.mapstate.GetLength(dimension)) &&
-                        item.mapstate.Cast<double>().SequenceEqual(state.mapstate.Cast<double>());
-                if (equal)
+                if (isStateSaved(newObjUP))
                 {
-                    return true;
+                    list.Add(newObjUP);
                 }
             }
-            return false;
+
+            MovementHandler newObjDOWN = obj;
+            newObjDOWN.makeMove("B");
+            if (!Enumerable.SequenceEqual(oldposition, newObjDOWN.posistion))
+            {
+                list.Add(newObjDOWN);
+            }
+
+            MovementHandler newObjRight = obj;
+            newObjRight.makeMove("R");
+            if (!Enumerable.SequenceEqual(oldposition, newObjRight.posistion))
+            {
+                list.Add(newObjRight);
+            }
+
+            MovementHandler newObjLEFT = obj;
+            newObjLEFT.makeMove("L");
+            if (!Enumerable.SequenceEqual(oldposition, newObjLEFT.posistion))
+            {
+                list.Add(newObjLEFT);
+            }
+
+            return list;
         }
 
-        private static List<int[]> SearchThree(List<int[]> list)
+        public static bool isStateSaved(MovementHandler obj)
         {
-            List<int[]> nextRoundList = new List<int[]>();
 
-            foreach (int[] position in list)
+            foreach (State item in ListOfStates)
             {
-                //nextRoundList.AddRange(nextStep(position));
+                var equal = item.savedMap.Rank == obj.CurrentMap.Rank &&
+                        Enumerable.Range(0, item.savedMap.Rank).All(dimension => item.savedMap.GetLength(dimension) == obj.CurrentMap.GetLength(dimension)) &&
+                        item.savedMap.Cast<string>().SequenceEqual(obj.CurrentMap.Cast<string>());
+                if (equal)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static List<MovementHandler> SearchThree(List<MovementHandler> list)
+        {
+            List<MovementHandler> nextRoundList = new List<MovementHandler>();
+
+            foreach (MovementHandler obj in list)
+            {
+                nextRoundList.AddRange(nextSteps(obj));
             }
 
             return SearchThree(nextRoundList);

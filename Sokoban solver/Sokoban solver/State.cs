@@ -8,13 +8,13 @@ namespace Sokoban_solver
 {
     public class State
     {
-        public int[,] mapstate { get; private set; }
+        public string[,] savedMap { get; private set; }
 
-        public State(int[,] newMap)
+        public State(string[,] newMap)
         {
-            mapstate = new int[Program.map.GetLength(0), Program.map.GetLength(1)];
+            savedMap = new string[newMap.GetLength(0), newMap.GetLength(1)];
 
-            Array.Copy(newMap, 0, mapstate, 0, newMap.Length);
+            savedMap = (string[,])newMap.Clone();
         }
     }
 }

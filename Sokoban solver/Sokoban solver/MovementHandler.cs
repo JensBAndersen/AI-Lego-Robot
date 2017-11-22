@@ -10,7 +10,7 @@ namespace Sokoban_solver
     {
         public readonly string[,] CurrentMap;
         public int[] posistion { get; private set; }
-        public readonly string Moves;
+        public string Moves { get; private set; }
 
         public MovementHandler(string[,] startingMap, int[] startingPosistion)
         {
@@ -22,13 +22,9 @@ namespace Sokoban_solver
 
         public void makeMove(string direction)
         {
-            int[] oldPosistion = new int[2];
-            oldPosistion[0] = posistion[0];
-            oldPosistion[1] = posistion[1];
+            int[] oldPosistion = (int[])posistion.Clone();
 
-            int[] NewPosistion = new int[2];
-            NewPosistion[0] = posistion[0];
-            NewPosistion[1] = posistion[1];
+            int[] NewPosistion = (int[])posistion.Clone();
 
             switch (direction)
             {
@@ -37,7 +33,8 @@ namespace Sokoban_solver
                     if (IsMoveValid(NewPosistion, direction))
                     {
                         updateMap(oldPosistion, NewPosistion);
-                        posistion = NewPosistion;
+                        posistion = (int[])NewPosistion.Clone();
+                        Moves += "F";
                     }
 
                     break;
@@ -47,7 +44,8 @@ namespace Sokoban_solver
                     if (IsMoveValid(NewPosistion, direction))
                     {
                         updateMap(oldPosistion, NewPosistion);
-                        posistion = NewPosistion;
+                        posistion = (int[])NewPosistion.Clone();
+                        Moves += "B";
                     }
 
                     break;
@@ -57,7 +55,8 @@ namespace Sokoban_solver
                     if (IsMoveValid(NewPosistion, direction))
                     {
                         updateMap(oldPosistion, NewPosistion);
-                        posistion = NewPosistion;
+                        posistion = (int[])NewPosistion.Clone();
+                        Moves += "R";
                     }
 
                     break;
@@ -67,7 +66,8 @@ namespace Sokoban_solver
                     if (IsMoveValid(NewPosistion, direction))
                     {
                         updateMap(oldPosistion, NewPosistion);
-                        posistion = NewPosistion;
+                        posistion = (int[])NewPosistion.Clone();
+                        Moves += "L";
                     }
 
                     break;
@@ -162,11 +162,11 @@ namespace Sokoban_solver
                 }
                 else if (oldPosistion[1] < newPosistion[1])
                 {
-                    upDatePositionWithDiamond(newPosistion, "UP");
+                    upDatePositionWithDiamond(newPosistion, "DOWN");
                 }
                 else if (oldPosistion[1] > newPosistion[1])
                 {
-                    upDatePositionWithDiamond(newPosistion, "DOWN");
+                    upDatePositionWithDiamond(newPosistion, "UP");
                 }
             }
 
@@ -181,9 +181,7 @@ namespace Sokoban_solver
 
         private void upDatePositionWithDiamond(int[] newPosition, string dir)
         {
-            int[] newDiamondPosition = newPosition;
-            newDiamondPosition[0] = newPosition[0];
-            newDiamondPosition[1] = newPosition[1];
+            int[] newDiamondPosition = (int[])newPosition.Clone();
 
             switch (dir)
             {
