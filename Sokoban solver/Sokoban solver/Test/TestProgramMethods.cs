@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace Sokoban_solver.Test
 {
     [TestFixture]
-    class TestSearchThreeMethods
+    class TestProgramMethods
     {
         private const int YRows = 3;
         private const int XCollums = 4;
@@ -26,7 +26,21 @@ namespace Sokoban_solver.Test
             Program.ListOfStates.Add(new State(map));
 
             var test = new MovementHandler(map, startPosition);
-            Assert.IsFalse(Program.isStateSaved(test));
+            Assert.IsFalse(Program.canMapBeSaved(test));
+        }
+
+        [Test]
+        public void isGameSolvedTest()
+        {
+            string[,] solvedMap = new string[YRows, XCollums] {
+                                               { "D", "+", "+", "W" },
+                                               { "+", "P", "+", "+" },
+                                               { "+", "W", "+", "D" } };
+
+            Program.ListOfStates.Add(new State(solvedMap));
+
+            var test = new MovementHandler(solvedMap, startPosition);
+            Assert.IsTrue(Program.isGameSolved(test));
         }
     }
 }

@@ -12,15 +12,37 @@ namespace Sokoban_solver
                                                { "+", "P", "+" },
                                                { "+", "W", "+"} };
 
+        private const int YRows = 3;
+        private const int XCollums = 4;
+        public static string[,] map2 = new string[YRows, XCollums] {
+                                               { "G", "D", "+", "+" },
+                                               { "+", "P", "D", "+" },
+                                               { "+", "W", "+", "G" } };
+
+        private static int[] G1 = new int[2] { 0, 0 };
+        private static int[] G2 = new int[2] { 2, 3 };
+        public static int[][] goalLocations = new int[][] { G1, G2 };
+        private static bool GameSolved = false;
+        private static int SearchThreeCounter = 0;
+
         public static List<State> ListOfStates = new List<State>();
 
 
 
         static void Main(string[] args)
         {
-            ListOfStates.Add(new State(map));
 
+            startTheRun();
+        }
 
+        public static void startTheRun()
+        {
+            ListOfStates.Add(new State(map2));
+            MovementHandler start = new MovementHandler(map2, new int[] { 1, 1 });
+            List<MovementHandler> test = new List<MovementHandler>() { start };
+            SearchThree(test);
+            Console.WriteLine(test.First().Moves);
+            Console.ReadLine();
         }
 
         public static List<MovementHandler> nextSteps(MovementHandler obj)
@@ -29,41 +51,71 @@ namespace Sokoban_solver
             int[] oldposition = (int[])obj.posistion.Clone();
 
 
-            MovementHandler newObjUP = obj;
+            MovementHandler newObjUP = new MovementHandler(obj);
+
             newObjUP.makeMove("F");
             if (!Enumerable.SequenceEqual(oldposition, newObjUP.posistion))
             {
-                if (isStateSaved(newObjUP))
+                if (canMapBeSaved(newObjUP))
                 {
+                    if (isGameSolved(newObjUP))
+                    {
+                        GameSolved = true;
+                        return new List<MovementHandler>() { newObjUP };
+                    }
                     list.Add(newObjUP);
                 }
             }
 
-            MovementHandler newObjDOWN = obj;
+            MovementHandler newObjDOWN = new MovementHandler(obj);
             newObjDOWN.makeMove("B");
             if (!Enumerable.SequenceEqual(oldposition, newObjDOWN.posistion))
             {
-                list.Add(newObjDOWN);
+                if (canMapBeSaved(newObjDOWN))
+                {
+                    if (isGameSolved(newObjDOWN))
+                    {
+                        GameSolved = true;
+                        return new List<MovementHandler>() { newObjDOWN };
+                    }
+                    list.Add(newObjDOWN);
+                }
             }
 
-            MovementHandler newObjRight = obj;
+            MovementHandler newObjRight = new MovementHandler(obj);
             newObjRight.makeMove("R");
             if (!Enumerable.SequenceEqual(oldposition, newObjRight.posistion))
             {
-                list.Add(newObjRight);
+                if (canMapBeSaved(newObjRight))
+                {
+                    if (isGameSolved(newObjRight))
+                    {
+                        GameSolved = true;
+                        return new List<MovementHandler>() { newObjRight };
+                    }
+                    list.Add(newObjRight);
+                }
             }
 
-            MovementHandler newObjLEFT = obj;
+            MovementHandler newObjLEFT = new MovementHandler(obj);
             newObjLEFT.makeMove("L");
             if (!Enumerable.SequenceEqual(oldposition, newObjLEFT.posistion))
             {
-                list.Add(newObjLEFT);
+                if (canMapBeSaved(newObjLEFT))
+                {
+                    if (isGameSolved(newObjLEFT))
+                    {
+                        GameSolved = true;
+                        return new List<MovementHandler>() { newObjLEFT };
+                    }
+                    list.Add(newObjLEFT);
+                }
             }
 
-            return list;
+            return list.ToList();
         }
 
-        public static bool isStateSaved(MovementHandler obj)
+        public static bool canMapBeSaved(MovementHandler obj)
         {
 
             foreach (State item in ListOfStates)
@@ -85,10 +137,32 @@ namespace Sokoban_solver
 
             foreach (MovementHandler obj in list)
             {
+                SearchThreeCounter++;
+                Console.WriteLine(SearchThreeCounter);
                 nextRoundList.AddRange(nextSteps(obj));
+                if (GameSolved)
+                {
+                    return new List<MovementHandler>() { nextRoundList.Last() };
+                }
             }
-
+            if(nextRoundList.Count == 0)
+            {
+                Console.WriteLine("Can't be solved");
+                return new List<MovementHandler>();
+            }
             return SearchThree(nextRoundList);
+        }
+
+        public static bool isGameSolved(MovementHandler movement)
+        {
+            foreach(int[] goal in goalLocations)
+            {
+                if(!(movement.CurrentMap[goal[0],goal[1]] == "D"))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
