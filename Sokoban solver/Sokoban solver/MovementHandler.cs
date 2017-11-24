@@ -14,15 +14,13 @@ namespace Sokoban_solver
 
         public MovementHandler(string[,] startingMap, int[] startingPosistion)
         {
-            CurrentMap = new string[startingMap.GetLength(0),startingMap.GetLength(1)];
-            Array.Copy(startingMap, 0, CurrentMap, 0, startingMap.Length);
+            CurrentMap = (string[,])startingMap.Clone();
             posistion = (int[])startingPosistion.Clone();
             Moves = string.Empty;
         }
         public MovementHandler(MovementHandler CopyFrom)
         {
-            CurrentMap = CopyFrom.CurrentMap;
-            Array.Copy(CopyFrom.CurrentMap, 0, CurrentMap, 0, CopyFrom.CurrentMap.Length);
+            CurrentMap = (string[,])CopyFrom.CurrentMap.Clone();
             posistion = (int[])CopyFrom.posistion.Clone();
             Moves = CopyFrom.Moves;
         }
@@ -179,6 +177,14 @@ namespace Sokoban_solver
 
             CurrentMap[newPosistion[0], newPosistion[1]] = "P";
 
+            if (MapHandler.readStaticMap(oldPosistion) == "G")
+            {
+                CurrentMap[oldPosistion[0], oldPosistion[1]] = "G";
+            }
+            else if (MapHandler.readStaticMap(oldPosistion) == "+" || MapHandler.readStaticMap(oldPosistion) == "D")
+            {
+                CurrentMap[oldPosistion[0], oldPosistion[1]] = "+";
+            }
         }
 
         private void upDatePositionWithDiamond(int[] newPosition, string dir)

@@ -8,9 +8,7 @@ namespace Sokoban_solver
 {
     public static class MapHandler
     {
-        private static string[,] mapStaticObjects = new string[3, 3] { { "G", "+", "+" },
-                                                                       { "+", "+", "+" },
-                                                                       { "+", "W", "+" } };
+        private static string[,] mapStaticObjects = Program.map2;
 
         public static string readMap(int[] posistion)
         {

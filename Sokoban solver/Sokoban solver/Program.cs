@@ -40,8 +40,8 @@ namespace Sokoban_solver
             ListOfStates.Add(new State(map2));
             MovementHandler start = new MovementHandler(map2, new int[] { 1, 1 });
             List<MovementHandler> test = new List<MovementHandler>() { start };
-            SearchThree(test);
-            Console.WriteLine(test.First().Moves);
+            var test2 = SearchThree(test);
+            Console.WriteLine(test2.First().Moves);
             Console.ReadLine();
         }
 
