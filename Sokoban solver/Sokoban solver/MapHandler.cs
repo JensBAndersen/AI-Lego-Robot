@@ -12,10 +12,10 @@ namespace Sokoban_solver
 
         public static string readMap(int[] posistion)
         {
-            if (posistion[0] < 0 || posistion[1] < 0 || posistion[0] > Program.map.GetLength(0) || posistion[1] > Program.map.GetLength(1))
+            if (posistion[0] < 0 || posistion[1] < 0 || posistion[0] > Program.map2.GetLength(0) || posistion[1] > Program.map2.GetLength(1))
                 return "Not in side the map";
 
-            else return Program.map[posistion[0], posistion[1]];
+            else return Program.map2[posistion[0], posistion[1]];
         }
 
         public static string readMap(int[] posistion, string[,] currentMap)

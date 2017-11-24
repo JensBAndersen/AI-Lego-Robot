@@ -23,7 +23,7 @@ namespace Sokoban_solver.Test
         [Test]
         public void isStateSavedTest()
         {
-            Program.ListOfStates.Add(new State(map));
+            Program.ListOfStates.Add(new State(map).ToString());
 
             var test = new MovementHandler(map, startPosition);
             Assert.IsFalse(Program.canMapBeSaved(test));
@@ -37,7 +37,7 @@ namespace Sokoban_solver.Test
                                                { "+", "P", "+", "+" },
                                                { "+", "W", "+", "D" } };
 
-            Program.ListOfStates.Add(new State(solvedMap));
+            Program.ListOfStates.Add(new State(solvedMap).ToString());
 
             var test = new MovementHandler(solvedMap, startPosition);
             Assert.IsTrue(Program.isGameSolved(test));

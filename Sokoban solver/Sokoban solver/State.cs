@@ -16,5 +16,14 @@ namespace Sokoban_solver
 
             savedMap = (string[,])newMap.Clone();
         }
+        public new string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            foreach (string value in savedMap)
+            {
+                builder.Append(value);
+            }
+            return builder.ToString();
+        }
     }
 }
