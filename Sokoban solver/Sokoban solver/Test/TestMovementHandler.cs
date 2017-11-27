@@ -118,5 +118,13 @@ namespace Sokoban_solver.Test
 
 
         }
+
+        [Test]
+        public void DeadLockTest()
+        {
+           
+
+
+        }
     }
 }

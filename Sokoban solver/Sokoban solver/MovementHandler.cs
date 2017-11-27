@@ -138,17 +138,56 @@ namespace Sokoban_solver
             switch (readMap(newPosition))
             {
                 case "+":
-                    return true;
+                    if (!checkForDeadLock(newPosition))
+                    {
+                        return true;
+                    }
+                    return false;
                 case "W":
                     return false;
                 case "D":
                     return false;
                 case "G":
-                    return true;
+                    if (!checkForDeadLock(newPosition))
+                    {
+                        return true;
+                    }
+                    return false;
                 default:
                     return false;
             }
 
+        }
+
+        private bool checkForDeadLock(int[] newPosition)
+        {
+
+            var Up = (int[])newPosition.Clone();
+            var Down = (int[])newPosition.Clone();
+            var Right = (int[])newPosition.Clone();
+            var Left = (int[])newPosition.Clone();
+
+            Up[0]++;
+            Down[0]--;
+            Right[1]++;
+            Left[1]--;
+
+            if(readMap(Up) == "W" || readMap(Up) == "Not in side the map")
+            {
+                if(readMap(Right) == "W" || readMap(Right) == "Not in side the map" || readMap(Left) == "W" || readMap(Left) == "Not in side the map")
+                {
+                    return false;
+                }
+            }
+
+            if (readMap(Down) == "W" || readMap(Down) == "Not in side the map")
+            {
+                if (readMap(Right) == "W" || readMap(Right) == "Not in side the map" || readMap(Left) == "W" || readMap(Left) == "Not in side the map")
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         private void updateMap(int[] oldPosistion, int[] newPosistion)

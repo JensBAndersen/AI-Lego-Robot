@@ -41,6 +41,8 @@ namespace Sokoban_solver
 
         static void Main(string[] args)
         {
+
+            Console.WriteLine("V24");
             Console.WriteLine(MapHandler.readMap(G1));
             Console.WriteLine(MapHandler.readMap(G2));
             Console.WriteLine(MapHandler.readMap(G3));
@@ -146,6 +148,16 @@ namespace Sokoban_solver
             //    {
             //        return false;
             //    }
+            //}
+            //if (ListOfStates.Count % 5000 == 0)
+            //{
+            //    if (ListOfStates.Count != ListOfStates.Distinct().Count())
+            //    {
+            //        Console.WriteLine("double");
+            //        Console.ReadLine();
+            //    }
+            //    Console.WriteLine("NO double!");
+            //    Console.ReadLine();
             //}
             ListOfStates.Add(new State(obj.CurrentMap).ToString());
             return true;

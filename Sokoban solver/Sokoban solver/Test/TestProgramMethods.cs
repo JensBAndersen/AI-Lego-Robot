@@ -18,6 +18,11 @@ namespace Sokoban_solver.Test
                                                { "+", "P", "D", "+" },
                                                { "+", "W", "+", "+" } };
 
+        public static string[,] map2 = new string[YRows, XCollums] {
+                                               { "G", "D", "+", "W" },
+                                               { "P", "+", "D", "+" },
+                                               { "+", "W", "+", "+" } };
+
         int[] startPosition = new int[2] { 1, 1 };
 
         [Test]
@@ -27,6 +32,9 @@ namespace Sokoban_solver.Test
 
             var test = new MovementHandler(map, startPosition);
             Assert.IsFalse(Program.canMapBeSaved(test));
+
+            var test2 = new MovementHandler(map2, startPosition);
+            Assert.IsTrue(Program.canMapBeSaved(test2));
         }
 
         [Test]
