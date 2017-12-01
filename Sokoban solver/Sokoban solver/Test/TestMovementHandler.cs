@@ -65,10 +65,11 @@ namespace Sokoban_solver.Test
 
             test.makeMove("R");
             var teststring = test.TestreadMap(test.posistion);
+            // move is a deadlock
             Assert.AreEqual(teststring, "P");
             Assert.AreEqual(1, test.posistion[0]);
-            Assert.AreEqual(2, test.posistion[1]);
-            Assert.AreEqual(test.Moves, "R");
+            Assert.AreEqual(1, test.posistion[1]);
+            Assert.AreEqual(test.Moves, "");
 
             test = new MovementHandler(map, startPosition);
 
@@ -109,12 +110,12 @@ namespace Sokoban_solver.Test
         [Test]
         public void SaveMovesTest()
         {
-            var test = new MovementHandler(map, startPosition);
+            var test = new MovementHandler(Program.map2, Program.StartingPosition);
             test.makeMove("R");
-            test.makeMove("B");
+            test.makeMove("F");
             test.makeMove("R");
 
-            Assert.AreEqual("RBR", test.Moves);
+            Assert.AreEqual("RFR", test.Moves);
 
 
         }
@@ -122,9 +123,44 @@ namespace Sokoban_solver.Test
         [Test]
         public void DeadLockTest()
         {
-           
+            var test = new MovementHandler(map, startPosition);
+            Assert.IsFalse(test.testCheckForDeadLock(new int[] { 2, 0 }));
+            Assert.IsFalse(test.testCheckForDeadLock(new int[] { 2, 3 }));
+            Assert.IsTrue(test.testCheckForDeadLock(new int[] { 0, 1 }));
+            Assert.IsFalse(test.testCheckForDeadLock(new int[] { 2, 2 }));
+            Assert.IsTrue(test.testCheckForDeadLock(new int[] { 1, 1 }));
+        }
 
+        [Test]
+        public void testMoves()
+        {
+            MovementHandler start = new MovementHandler(Program.map2, new int[] { 8, 2 });
+            List<MovementHandler> test = new List<MovementHandler>() { start };
 
+            foreach (int[] goal in Program.goalLocations)
+            {
+                if (MapHandler.readMap(goal) != "G")
+                {
+                    return;
+                }
+            }
+
+            if (MapHandler.readMap(new int[] { 8, 2 }) != "+")
+            {
+                return;
+            }
+
+            Assert.IsTrue(true);
+            start.makeMove("F");
+            Assert.AreEqual("F", start.Moves);
+            start.makeMove("B");
+            Assert.AreEqual("FB", start.Moves);
+            start.makeMove("B");
+            Assert.AreEqual("FBB", start.Moves);
+            start.makeMove("L");
+            Assert.AreEqual("FBBL", start.Moves);
+            start.makeMove("L");
+            Assert.AreEqual("FBBLL", start.Moves);
         }
     }
 }

@@ -8,34 +8,35 @@ namespace Sokoban_solver
 {
     class Program
     {
-        public static string[,] map = new string[3, 3] { { "G", "D", "+" },
-                                               { "+", "P", "+" },
-                                               { "+", "W", "+"} };
+        //public static string[,] map = new string[3, 3] { { "G", "D", "+" },
+        //                                       { "+", "P", "+" },
+        //                                       { "+", "W", "+"} };
 
         private const int YRows =10;
         private const int XCollums = 5;
-        public static string[,] map2 = new string[YRows, XCollums] {
-                                               { "+", "+", "P", "W", "W" },
-                                               { "+", "D", "D", "+", "W" },
-                                               { "+", "D", "+", "D", "W" },
-                                               { "+", "+", "D", "+", "+" },
-                                               { "+", "+", "+", "W", "+" },
-                                               { "+", "+", "+", "W", "+" },
-                                               { "W", "+", "+", "G", "+" },
-                                               { "W", "W", "+", "G", "G" },
-                                               { "+", "+", "G", "G", "+" },
-                                               { "+", "+", "+", "+", "+" }, };
+        public static readonly string[,] map2 = new string[YRows, XCollums] {
+                                               { "+", "+", "+", "G", "+" },
+                                               { "+", "+", "+", "+", "+" },
+                                               { "G", "+", "G", "+", "G" },
+                                               { "+", "+", "W", "+", "W" },
+                                               { "+", "D", "G", "+", "+" },
+                                               { "W", "W", "+", "D", "+" },
+                                               { "W", "W", "+", "W", "+" },
+                                               { "+", "D", "D", "+", "+" },
+                                               { "+", "D", "+", "+", "+" },
+                                               { "+", "+", "+", "W", "W" }, };
 
-        private static int[] G1 = new int[2] { 8, 2 };
-        private static int[] G2 = new int[2] { 8, 3 };
-        private static int[] G3 = new int[2] { 7, 3 };
-        private static int[] G4 = new int[2] { 7, 4 };
-        private static int[] G5 = new int[2] { 6, 3 };
-        public static int[][] goalLocations = new int[][] { G1, G2, G3, G4, G5 };
+        private static readonly int[] G1 = new int[2] { 2, 0 };
+        private static readonly int[] G2 = new int[2] { 0, 3 };
+        private static readonly int[] G3 = new int[2] { 2, 2 };
+        private static readonly int[] G4 = new int[2] { 2, 4 };
+        private static readonly int[] G5 = new int[2] { 4, 2 };
+        public static readonly int[][] goalLocations = new int[][] { G1, G2, G3, G4, G5 };
         private static bool GameSolved = false;
         private static int SearchThreeCounter = 0;
+        public static readonly int[] StartingPosition = new int[] { 8, 2 };
 
-        public static List<string> ListOfStates = new List<string>();
+        public static HashSet<string> ListOfStates = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
 
 
@@ -56,8 +57,21 @@ namespace Sokoban_solver
         public static void startTheRun()
         {
             ListOfStates.Add(new State(map2).ToString());
-            MovementHandler start = new MovementHandler(map2, new int[] { 0, 2 });
+            MovementHandler start = new MovementHandler(map2, StartingPosition);
             List<MovementHandler> test = new List<MovementHandler>() { start };
+            foreach(int[] goal in goalLocations)
+            {
+                if(MapHandler.readMap(goal) != "G")
+                {
+                    return;
+                }
+            }
+
+            if(MapHandler.readMap(new int[] { 8, 2 }) != "+")
+            {
+                return;
+            }
+
             var test2 = SearchThree(test);
             Console.WriteLine(test2.First().Moves);
             Console.ReadLine();
@@ -170,7 +184,7 @@ namespace Sokoban_solver
             foreach (MovementHandler obj in list)
             {
                 SearchThreeCounter++;
-                Console.WriteLine(SearchThreeCounter);
+                Console.WriteLine(SearchThreeCounter + " String lenght: " + obj.Moves.Length + " nextRoundList: " + nextRoundList.Count + " ListOfStates: " + ListOfStates.Count);
                 nextRoundList.AddRange(nextSteps(obj));
                 if (GameSolved)
                 {

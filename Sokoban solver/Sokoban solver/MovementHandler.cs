@@ -138,7 +138,7 @@ namespace Sokoban_solver
             switch (readMap(newPosition))
             {
                 case "+":
-                    if (!checkForDeadLock(newPosition))
+                    if (checkForDeadLock(newPosition))
                     {
                         return true;
                     }
@@ -148,7 +148,7 @@ namespace Sokoban_solver
                 case "D":
                     return false;
                 case "G":
-                    if (!checkForDeadLock(newPosition))
+                    if (checkForDeadLock(newPosition))
                     {
                         return true;
                     }
@@ -157,6 +157,11 @@ namespace Sokoban_solver
                     return false;
             }
 
+        }
+
+        public bool testCheckForDeadLock(int[] newPosition)
+        {
+            return checkForDeadLock(newPosition);
         }
 
         private bool checkForDeadLock(int[] newPosition)
