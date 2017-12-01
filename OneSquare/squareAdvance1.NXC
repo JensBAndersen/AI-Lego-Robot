@@ -18,6 +18,7 @@
 const byte bSensor = IN_4;
 const byte lSensor = IN_1;
 const byte rSensor = IN_2;
+const byte canSensor = IN_3;
 
 const byte rMotor  = OUT_A;
 const byte lMotor  = OUT_B;
@@ -33,7 +34,7 @@ const long revTurn  = 535.5 ; // 0.85  * 630 - 180 degree turn
 
 const int lMotorBias = 3;
 const int rMotorBias = 0;
-int moveDir = -100;
+int moveDir = -100;  // Global Variable that stored the current directions of movement
 long lRot, rRot = 0;
 
 bool SensorLeft = false;
@@ -44,6 +45,8 @@ void setupNXT(){
      SetSensorLight(bSensor);
 	   SetSensorLight(lSensor);
 	 SetSensorLight(rSensor);
+	 SetSensorTouch(canSensor);
+
 	 ResetRotationCount(OUT_AB);
 }
 
@@ -75,7 +78,7 @@ int powerMotors(int dir, char pwr){
 			OnFwd(rMotor, pwr-rMotorBias);
 			OnRev(lMotor, pwr-lMotorBias);
 			break;
-			
+
 		default:
 			Off(OUT_AB);
      return dir;
@@ -146,17 +149,6 @@ void lTurn(){
   Wait(5);
 }
 
-void rTurn(){
-  bool finish = false;
-  powerMotors(2, 40);
-  Wait(200);
-  while(!finish){
-      finish = turnStatus();
-  }
-  powerMotors(1,40);
-  Wait(5);
-}
-
 void oneSquareV2(){
 	   powerMotors(0, 75);
      Wait(200);
@@ -170,62 +162,80 @@ void oneSquareV2(){
       }
         ResetRotationCount(OUT_AB);
         Wait(1);
-        smallAdvance();
+        bool canPresent = (Sensor(canSensor));
+        if(Sensor(IN_3))
+           smallAdvance();
         Wait(1);
       }
-      
- void rTurnV2(){
- 
-  bool finish = false;
-  bool found = false;
-  powerMotors(2, 40);
-  Wait(200);
-  while(!finish){
-      if(readRotation(400)){
-      finish  = true;
-      Off(OUT_AB);
-      }
-      found = turnStatus();
-      if (found)
-         finish = true;
-  }
-  if (!found){
-  finish = false;
-  ResetRotationCount(OUT_AB);
-  Wait(1);
-  powerMotors(1,30);
-  while(!finish){
-   if(readRotation(400)){
-      finish  = true;
-      }
-      found = turnStatus();
-      if (found)
-         finish = true;
-  }
-   if (found)
-     powerMotors(2,40);
-     Wait(5);
-     Off(OUT_AB);
-  }else{
-      powerMotors(1,40);
-      Wait(5);
-      Off(OUT_AB);
-    }
-  
 
-// turning pseudo code
-// turn for
+ void rTurnV2(bool turnRight = false){
+	bool finish = false;
+	bool found = false;
+  ResetRotationCount(OUT_AB);
+	if (!turnRight)
+		powerMotors(2, 40); //rotate left
+	else
+		powerMotors(1,40); // turn Right
+
+	Wait(200);
+	while(!finish){
+		if(readRotation(400)){
+			finish  = true;
+			Off(OUT_AB);
+		}
+		found = turnStatus();
+		if (found)
+			finish = true;
+	}
+	if (!found){			// If the line has not been found, rotate the other direction until it is found
+		finish = false;
+		ResetRotationCount(OUT_AB);
+		Wait(1);
+
+		if (!turnRight)		// turn opposite direction at a slower pace
+			powerMotors(1, 30); //rotate right
+		else
+			powerMotors(2, 30); // turn left
+
+		while(!finish){
+			if(readRotation(400)){
+				finish  = true;
+			}
+			found = turnStatus();
+			if (found)
+				finish = true;
+		}
+		if (found)
+		if (!turnRight)		// turn opposite direction at a slower pace
+			powerMotors(1, 30); //rotate right
+		else
+			powerMotors(2, 30); // turn left
+		Wait(5);
+		Off(OUT_AB);
+	}else{
+		if (!turnRight)		// turn opposite direction at a slower pace
+			powerMotors(2, 30); //rotate right
+		else
+			powerMotors(1, 30); // turn left
+		Wait(5);
+		Off(OUT_AB);
+	}
 
 }
 
 task main(){
 	setupNXT();
-	/*while(1){
-	
+	while(1){
+  if(SensorBoolean(IN_3)){
+     OnFwd(OUT_AB, 30);
+     Off(OUT_AB);
+     }
+  }
+ //rTurnV2(true);
  oneSquareV2();
-  rTurn();
-  }*/
-  rTurnV2();
+ //rTurnV2(false);
+ //}
+  //rTurnV2();
  Off(OUT_AB);
 }
 
