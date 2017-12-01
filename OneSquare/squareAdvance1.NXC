@@ -15,6 +15,8 @@
 // L 46 -> 18
 // R 53 -> 19
 
+
+
 const byte bSensor = IN_4;
 const byte lSensor = IN_1;
 const byte rSensor = IN_2;
@@ -26,7 +28,6 @@ const byte lMotor  = OUT_B;
 const int Black1 = 20;
 const int Black2 = 20;
 const int Black4 = 35;
-
 
 const long sqUnit    = 630;
 const long lhTurn    = 266.25; // 0.425 * 630 - 90 degree turn
@@ -40,6 +41,10 @@ long lRot, rRot = 0;
 bool SensorLeft = false;
 bool SensorRight = false;
 bool SensorBack = false;
+
+// Executor Code
+string cmdList="Path.dat" ;
+string readCmdList = "FFRF" ;
 
 void setupNXT(){
      SetSensorLight(bSensor);
@@ -138,7 +143,7 @@ bool turnStatus(){
 	return false;
 }
 
-void lTurn(){
+/*void lTurn(){
   bool finish = false;
   powerMotors(1, 50);
   Wait(200);
@@ -147,10 +152,13 @@ void lTurn(){
   }
   powerMotors(2, 50);
   Wait(5);
-}
+} */
 
-void oneSquareV2(){
-	   powerMotors(0, 75);
+void oneSquare(bool direction=true){  // true = fwds, false = back
+     if(!direction)
+         powerMotors(-1, 75);
+     else
+         powerMotors(0, 75);
      Wait(200);
      bool finished = false;
      while(!finished){
@@ -162,13 +170,12 @@ void oneSquareV2(){
       }
         ResetRotationCount(OUT_AB);
         Wait(1);
-        bool canPresent = (Sensor(canSensor));
-        if(Sensor(IN_3))
+        if(!SensorBoolean(IN_3))
            smallAdvance();
         Wait(1);
       }
 
- void rTurnV2(bool turnRight = false){
+ void rTurn(bool turnRight = false){
 	bool finish = false;
 	bool found = false;
   ResetRotationCount(OUT_AB);
@@ -223,19 +230,64 @@ void oneSquareV2(){
 
 }
 
+
+void Executor(){
+     TextOut(0, LCD_LINE1, readCmdList);
+     char expandedPath[];
+     UnflattenVar(readCmdList, expandedPath);
+
+     string data = ByteArrayToStr(rd);
+     TextOut(0, LCD_LINE3, data);
+     Wait(SEC_5);
+     	//for(int i = 0; i <= strlen(readCmdList); i++){
+		//byte cmdCurrent[];
+    // = StrIndex(readCmdList, i);
+     /*
+		Wait(SEC_1);
+			switch (cmdCurrent){
+			case "F" :
+				oneSquare();
+				break;
+			case "B" :
+				oneSquare(false);
+				break;
+			case "L" :
+				rTurn(false);
+				break;
+			case "R" :
+				rTurn(true);
+				break;
+			default :
+				Off(OUT_AB);
+				break;
+
+		}*/
+	}
+}
+
+void getPath(string &filename){
+    byte handle;
+    string inString;
+    handle = fopen(filename , "r" );
+    TextOut(0, LCD_LINE1, filename);
+    if (handle != NULL)
+    {
+      ReadLnString(handle, readCmdList);
+      TextOut(0, LCD_LINE2, "Commands Read:" );
+      TextOut(0, LCD_LINE3, readCmdList);
+
+      //return true;
+    } else{
+      TextOut(0, LCD_LINE1, "ERROR!");
+      //return false;
+      }
+    fclose(handle);
+}
 task main(){
 	setupNXT();
-	while(1){
-  if(SensorBoolean(IN_3)){
-     OnFwd(OUT_AB, 30);
-     Off(OUT_AB);
-     }
-  }
- //rTurnV2(true);
- oneSquareV2();
- //rTurnV2(false);
- //}
-  //rTurnV2();
- Off(OUT_AB);
+  //getPath(cmdList);
+  Wait(1);
+  Executor();
+  Wait(SEC_5);
 }
 
