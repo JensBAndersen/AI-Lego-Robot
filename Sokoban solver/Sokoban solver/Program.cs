@@ -196,6 +196,7 @@ namespace Sokoban_solver
                 Console.WriteLine("Can't be solved");
                 return new List<MovementHandler>();
             }
+            list = null;
             return SearchThree(nextRoundList);
         }
 

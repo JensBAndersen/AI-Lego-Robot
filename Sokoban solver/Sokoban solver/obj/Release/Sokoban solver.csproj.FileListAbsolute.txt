@@ -1,0 +1,17 @@
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\NUnit3.TestAdapter.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\nunit.engine.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\nunit.engine.api.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Mono.Cecil.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Mono.Cecil.Pdb.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Mono.Cecil.Mdb.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Mono.Cecil.Rocks.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Sokoban solver.exe.config
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Sokoban solver.exe
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Sokoban solver.pdb
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\nunit.framework.dll
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Release\nunit.framework.xml
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Release\Sokoban solver.csprojResolveAssemblyReference.cache
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Release\Sokoban solver.csproj.CoreCompileInputs.cache
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Release\Sokoban solver.exe
+C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Release\Sokoban solver.pdb
