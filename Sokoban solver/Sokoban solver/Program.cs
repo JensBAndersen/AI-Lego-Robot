@@ -36,6 +36,9 @@ namespace Sokoban_solver
         private static int SearchThreeCounter = 0;
         public static readonly int[] StartingPosition = new int[] { 8, 2 };
 
+        public static bool test1 = false;
+        public static int testLenght = 0;
+
         public static HashSet<string> ListOfStates = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
 
@@ -43,7 +46,7 @@ namespace Sokoban_solver
         static void Main(string[] args)
         {
 
-            Console.WriteLine("V24");
+            Console.WriteLine("V25");
             Console.WriteLine(MapHandler.readMap(G1));
             Console.WriteLine(MapHandler.readMap(G2));
             Console.WriteLine(MapHandler.readMap(G3));
@@ -81,7 +84,6 @@ namespace Sokoban_solver
         {
             List<MovementHandler> list = new List<MovementHandler>();
             int[] oldposition = (int[])obj.posistion.Clone();
-
 
             MovementHandler newObjUP = new MovementHandler(obj);
 
@@ -153,26 +155,7 @@ namespace Sokoban_solver
             {
                 return false;
             }
-            //foreach (State item in ListOfStates)
-            //{
-            //    var equal = item.savedMap.Rank == obj.CurrentMap.Rank &&
-            //            Enumerable.Range(0, item.savedMap.Rank).All(dimension => item.savedMap.GetLength(dimension) == obj.CurrentMap.GetLength(dimension)) &&
-            //            item.savedMap.Cast<string>().SequenceEqual(obj.CurrentMap.Cast<string>());
-            //    if (equal)
-            //    {
-            //        return false;
-            //    }
-            //}
-            //if (ListOfStates.Count % 5000 == 0)
-            //{
-            //    if (ListOfStates.Count != ListOfStates.Distinct().Count())
-            //    {
-            //        Console.WriteLine("double");
-            //        Console.ReadLine();
-            //    }
-            //    Console.WriteLine("NO double!");
-            //    Console.ReadLine();
-            //}
+
             ListOfStates.Add(new State(obj.CurrentMap).ToString());
             return true;
         }
@@ -196,7 +179,8 @@ namespace Sokoban_solver
                 Console.WriteLine("Can't be solved");
                 return new List<MovementHandler>();
             }
-            list = null;
+
+            list = null;          
             return SearchThree(nextRoundList);
         }
 
