@@ -158,12 +158,16 @@ void oneSquareV2(){
      while(!finished){
       followLine(75);
       bool canPresent = (Sensor(canSensor));
-      if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20) && canPresent == 1){
+      if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20)){
       finished = true;
-      finished = readRotation(330);
         } else
           finished = readRotation(730);
+        if((canPresent == 1))
+          powerMotors(-1, 50);
+          finished = readRotation(330);
+
       }
+
       ResetRotationCount(OUT_AB);
       Wait(1);
          if(Sensor(IN_3))
@@ -232,16 +236,20 @@ void oneSquareV2(){
 
 }
 
+
 task main(){
 	setupNXT();
-	for(int i = 0; i < 2; i++){
-  /*if(SensorBoolean(IN_3)){
-     OnFwd(OUT_AB, 60);
-     Off(OUT_AB);
-     }   */
-     oneSquareV2();
+	/*for(int i = 0; i < 5; i++){
+       oneSquareV2();
      i++;
+  }*/
+  
+  while(true){
+  oneSquareV2();
+
+
   }
+  
  //rTurnV2(true);
 
  //rTurnV2(false);
