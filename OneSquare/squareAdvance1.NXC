@@ -44,7 +44,7 @@ bool SensorBack = false;
 
 // Executor Code
 string cmdList="Path.dat" ;
-string readCmdList = "FFRF" ;
+string readCmdList;
 
 void setupNXT(){
      SetSensorLight(bSensor);
@@ -143,17 +143,6 @@ bool turnStatus(){
 	return false;
 }
 
-/*void lTurn(){
-  bool finish = false;
-  powerMotors(1, 50);
-  Wait(200);
-  while(!finish){
-      finish = turnStatus();
-  }
-  powerMotors(2, 50);
-  Wait(5);
-} */
-
 void oneSquare(bool direction=true){  // true = fwds, false = back
      if(!direction)
          powerMotors(-1, 75);
@@ -161,89 +150,94 @@ void oneSquare(bool direction=true){  // true = fwds, false = back
          powerMotors(0, 75);
      Wait(200);
      bool finished = false;
+     bool canPresent = false;
      while(!finished){
+
       followLine(75);
+	  canPresent = Sensor(canSensor);
       if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20) ){
        finished = true;
-      } else
-        finished = readRotation(730);
-      }
+      } else{
+		if(canPresent){
+		finished = readRotation(330);
+		     if(!direction)
+				powerMotors(-1, 50);
+			else
+			  powerMotors(0, 50);
+		} else
+			finished = readRotation(730);
+	 }
+	 }
         ResetRotationCount(OUT_AB);
         Wait(1);
-        if(!SensorBoolean(IN_3))
+        if(!canPresent)
            smallAdvance();
         Wait(1);
-      }
+}
+
 
  void rTurn(bool turnRight = false){
 	bool finish = false;
 	bool found = false;
-  ResetRotationCount(OUT_AB);
-	if (!turnRight)
-		powerMotors(2, 40); //rotate left
-	else
-		powerMotors(1,40); // turn Right
+	int rotSpeed = 50;
 
-	Wait(200);
+	ResetRotationCount(OUT_AB);
+	if (!turnRight)
+		powerMotors(2, rotSpeed); //rotate left
+	else
+		powerMotors(1, rotSpeed); // turn Right
+		Wait(150);
+
 	while(!finish){
-		if(readRotation(400)){
+		if(readRotation(400))
 			finish  = true;
-			Off(OUT_AB);
-		}
+
 		found = turnStatus();
 		if (found)
 			finish = true;
 	}
+
 	if (!found){			// If the line has not been found, rotate the other direction until it is found
 		finish = false;
 		ResetRotationCount(OUT_AB);
+		rotSpeed = 30;
 		Wait(1);
 
 		if (!turnRight)		// turn opposite direction at a slower pace
-			powerMotors(1, 30); //rotate right
+			powerMotors(1, rotSpeed); //rotate right
 		else
-			powerMotors(2, 30); // turn left
+			powerMotors(2, rotSpeed); // turn left
 
 		while(!finish){
-			if(readRotation(400)){
+			if(readRotation(400))
 				finish  = true;
-			}
 			found = turnStatus();
 			if (found)
 				finish = true;
 		}
-		if (found)
-		if (!turnRight)		// turn opposite direction at a slower pace
-			powerMotors(1, 30); //rotate right
+	}
+	if (found){       //if found, power motors briefly in opposite direction to compensate for momentum
+		if (!turnRight)
+			powerMotors(1, rotSpeed); //rotate right
 		else
-			powerMotors(2, 30); // turn left
+			powerMotors(2, rotSpeed); // turn left
 		Wait(5);
 		Off(OUT_AB);
 	}else{
-		if (!turnRight)		// turn opposite direction at a slower pace
-			powerMotors(2, 30); //rotate right
-		else
-			powerMotors(1, 30); // turn left
-		Wait(5);
-		Off(OUT_AB);
+	if (!turnRight)		// turn opposite direction at a slower pace
+		powerMotors(2, 30); //rotate right
+	else
+		powerMotors(1, 30); // turn left
+	Wait(5);
+	Off(OUT_AB);
 	}
+ }
 
-}
 
 
 void Executor(){
-     TextOut(0, LCD_LINE1, readCmdList);
-     char expandedPath[];
-     UnflattenVar(readCmdList, expandedPath);
-
-     string data = ByteArrayToStr(rd);
-     TextOut(0, LCD_LINE3, data);
-     Wait(SEC_5);
-     	//for(int i = 0; i <= strlen(readCmdList); i++){
-		//byte cmdCurrent[];
-    // = StrIndex(readCmdList, i);
-     /*
-		Wait(SEC_1);
+   for(int i = 0; i <= strlen(readCmdList); i++){
+   string cmdCurrent = SubStr(readCmdList, i, 1);
 			switch (cmdCurrent){
 			case "F" :
 				oneSquare();
@@ -252,17 +246,17 @@ void Executor(){
 				oneSquare(false);
 				break;
 			case "L" :
-				rTurn(false);
+				rTurn(true);
 				break;
 			case "R" :
-				rTurn(true);
+				rTurn(false);
 				break;
 			default :
 				Off(OUT_AB);
 				break;
+    }
+		}
 
-		}*/
-	}
 }
 
 void getPath(string &filename){
@@ -283,11 +277,13 @@ void getPath(string &filename){
       }
     fclose(handle);
 }
+
+
 task main(){
 	setupNXT();
-  //getPath(cmdList);
+  getPath(cmdList);
   Wait(1);
-  Executor();
-  Wait(SEC_5);
+  //Executor();
+  rTurn(true);
 }
 
