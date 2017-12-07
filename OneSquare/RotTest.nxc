@@ -1,0 +1,18 @@
+#include "D:\Projects\GitHub\AI-Lego-Robot\OneSquare\Setup.h"
+
+void nTurn(){
+	ResetRotationCount(OUT_AB);
+	bool initRot = false;
+	while(!initRot){
+     powerMotors(1, 70);
+	   initRot = readRotation(180);
+	}
+	Off(OUT_AB);
+}
+
+
+task main(){
+     setupNXT();
+     nTurn();
+
+}

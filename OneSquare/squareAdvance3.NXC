@@ -40,6 +40,7 @@ const long revTurn  = 535.5 ; // 0.85  * 630 - 180 degree turn
 
 const int lMotorBias = 3;
 const int rMotorBias = 0;
+const long lineFollowBias = 1.5;
 int moveDir = -100;  // Global Variable that stored the current directions of movement
 long lRot, rRot = 0;
 
@@ -49,7 +50,7 @@ bool SensorBack = false;
 
 // Executor Code
 string cmdList="Path.dat" ;
-string readCmdList = "FFB" ;
+string readCmdList = "FLFR" ;
 
 void setupNXT(){
      SetSensorLight(bSensor);
@@ -95,18 +96,6 @@ int powerMotors(int dir, char pwr){
      break;
 	}
 }
-void checkLineType(bool& sStatus, bool& pStatus){
-	int lSenVal = Sensor(lSensor);
-	int rSenVal = Sensor(rSensor);
-	int bSenVal = Sensor(bSensor);
-
-	if (((lSenVal < lSenLimit) || (rSenVal < rSenLimit)) && (bSenVal < bSenLimit)){
-		sStatus = true;
-	} else
-		if ((lSenVal < lSenLimit) || (rSenVal < rSenLimit) || (bSenVal < bSenLimit)){
-			pStatus = true;
-		}
- }
 
  void dispSens(){
 	int lSenVal = Sensor(lSensor);
@@ -124,6 +113,27 @@ void checkLineType(bool& sStatus, bool& pStatus){
  }
 
 
+void followLineNw(int pwr = 40){
+  int bufRight  = 40-Sensor(IN_1);
+  int bufLeft   = 40-Sensor(IN_2);
+
+  if (moveDir ==0){
+
+       int lSpeed = ((pwr-lMotorBias)+ ((bufLeft-bufRight)*lineFollowBias));
+       int rSpeed = ((pwr-rMotorBias)+ ((bufRight-bufLeft)*lineFollowBias));
+
+      OnFwd(rMotor, rSpeed);
+			OnFwd(lMotor, lSpeed);
+  }
+  else if (moveDir == -1){
+       int lSpeed = ((pwr+lMotorBias)+bufLeft)*lineFollowBias;
+       int rSpeed = ((pwr+rMotorBias)+bufRight)*lineFollowBias;
+       
+       OnRev(lMotor, lSpeed);
+       OnRev(rMotor, rSpeed);
+  }
+}
+
 void followLine(long pwr = 40){
   int bufferRight = 32-Sensor(IN_1);
   int buffeLeft   = 34-Sensor(IN_2);
@@ -137,7 +147,6 @@ void followLine(long pwr = 40){
        OnRev(OUT_B, pwr-3 + buffeLeft);
   }
 }
-
 
 bool readRotation(long thresh){
 	lRot = labs(MotorRotationCount(OUT_A));
@@ -192,7 +201,7 @@ void oneSquare(){  // true = fwds, false = back
      
 	if(!canPresent){
 	while(!finished){
-		followLine(75);
+		followLine(90);
 		if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20) ){
 			finished = true;
 		}else{
@@ -204,10 +213,10 @@ void oneSquare(){  // true = fwds, false = back
 	Wait(1);
 	}
   else {
-		PlayTone(500, 500);
+		PlayTone(1000, 200);
 		while(!finished){
-			followLine(75);
-			finished = readRotation(330);
+			followLine(50);
+			finished = readRotation(290);
 		}
 		Off(OUT_AB);
 	}
@@ -232,10 +241,10 @@ void revSquare(){
 	Off(OUT_AB);
 }
 
- void rTurn(bool turnRight = false){
+ void rTurnOld(bool turnRight = false){
 	bool finish = false;
 	bool found = false;
-	int rotSpeed = 75;
+	int rotSpeed = 50;
 
 	ResetRotationCount(OUT_AB);
 	Wait(1);
@@ -283,39 +292,14 @@ void revSquare(){
 		Off(OUT_AB);
 	}else{
 	if (!turnRight)		// turn opposite direction at a slower pace
-		powerMotors(2, 30); //rotate right
+		powerMotors(2, rotSpeed); //rotate right
 	else
-		powerMotors(1, 30); // turn left
-	Wait(5);
+		powerMotors(1, rotSpeed); // turn left
+	Wait(100);
 	Off(OUT_AB);
+  Wait(100);
 	}
  }
-
-
-void Executor(){
-   for(int i = 0; i <= strlen(readCmdList); i++){
-   string cmdCurrent = SubStr(readCmdList, i, 1);
-			switch (cmdCurrent){
-			case "F" :
-				oneSquare();
-				break;
-			case "B" :
-           revSquare();
-				break;
-			case "L" :
-           rTurn(true);
-				break;
-			case "R" :
-           rTurn();
-				break;
-			default :
-				Off(OUT_AB);
-				break;
-    }
-    PlayTone(1000, 500);
-    cmdCurrent="" ;
-		}
-}
 
 void getPath(string &filename){
     byte handle;
@@ -336,11 +320,110 @@ void getPath(string &filename){
     fclose(handle);
 }
 
-task main(){
-	setupNXT();
+bool turnSens(){
 
- // getPath(cmdList);
-  Executor();
-  Off(OUT_AB);
+  if(Sensor(lSensor) < Black1){SensorLeft = true;} //A
+  if(Sensor(rSensor) < Black2){SensorRight = true;} //B
+  if(Sensor(bSensor) < Black4){SensorBack = true;} //C
+
+  if(SensorLeft){
+   if (SensorRight){
+      SensorLeft = false;
+      SensorRight = false;
+      SensorBack = false;
+      return true;
+   }
+  }
+  else
+
+  if(SensorRight){
+   if (SensorLeft){
+      SensorLeft = false;
+      SensorRight = false;
+      SensorBack = false;
+      return true;
+   }
+  } else
+	    return false;
 }
 
+
+void lTurn(int numRot = 1){
+	ResetRotationCount(OUT_AB);
+	Wait(1);
+	bool initRot = false;
+	bool found = false;
+	int initRotNum = 150;
+  if (numRot ==2){           //for 180 degree turns
+   initRotNum = lhTurn+150;
+  }
+  
+  
+	powerMotors(1, 100);
+	while(!initRot){
+	   initRot = readRotation(initRotNum);
+	}
+ powerMotors(1, 30);
+ while(!found){
+  found = turnSens();
+ }
+ powerMotors(2,50);
+ Wait(110);
+ Off(OUT_AB);
+}
+
+void rTurn(int numRot = 1){
+	ResetRotationCount(OUT_AB);
+	Wait(1);
+	bool initRot = false;
+	bool found = false;
+	int initRotNum = 150;
+  if (numRot ==2){           //for 180 degree turns
+   initRotNum = lhTurn+150;
+  }
+
+	powerMotors(2, 100);
+	while(!initRot){
+	   initRot = readRotation(lhTurn+150);
+	}
+ powerMotors(2, 30);
+ while(!found){
+  found = turnSens();
+ }
+ powerMotors(1,50);
+ Wait(110);
+ Off(OUT_AB);
+}
+
+void Executor(){
+   for(int i = 0; i <= strlen(readCmdList); i++){
+   string cmdCurrent = SubStr(readCmdList, i, 1);
+			switch (cmdCurrent){
+			case "F" :
+				oneSquare();
+				break;
+			case "B" :
+           revSquare();
+           lTurn(2);
+				break;
+			case "L" :
+           lTurn();
+				break;
+			case "R" :
+           rTurn();
+				break;
+			default :
+				Off(OUT_AB);
+				break;
+    }
+    PlayTone(100, 100);
+    cmdCurrent="" ;
+    Off(OUT_AB);
+		}
+}
+task main(){
+	setupNXT();
+	//while(1){
+  Executor();
+  //}
+}
