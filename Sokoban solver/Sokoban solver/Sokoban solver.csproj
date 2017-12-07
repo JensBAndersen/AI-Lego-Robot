@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandTranslator.cs" />
     <Compile Include="MapHandler.cs" />
     <Compile Include="MovementHandler.cs" />
     <Compile Include="Program.cs" />

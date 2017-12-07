@@ -49,9 +49,11 @@ namespace Sokoban_solver
             Console.WriteLine(MapHandler.readMap(G3));
             Console.WriteLine(MapHandler.readMap(G4));
             Console.WriteLine(MapHandler.readMap(G5));
+            String commends = "FBBLLFFRRBRRFFFFLFFLLBLBRRBBBLLBBRRFFFFBBBRRFFFLFFFRFLFLBLBBBRBRRBBBLLFFFRFFFLFRBLLBBRBBBLLBRBRFFFFRFFFLFFRRBLFLBLBBBRBRRBBLBLFFFRFFFF";
+            CommandTranslator.ReadCommandsToFile(commends);
 
             Console.ReadLine();
-            startTheRun();
+            //startTheRun();
         }
 
         public static void startTheRun()

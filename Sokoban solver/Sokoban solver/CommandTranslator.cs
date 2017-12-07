@@ -25,7 +25,7 @@ namespace Sokoban_solver
             string text = Translate(CommandString);
             // WriteAllText creates a file, writes the specified string to the file,
             // and then closes the file.    You do NOT need to call Flush() or Close().
-            System.IO.File.WriteAllText(@"C:\Users\Jens Andersen\Desktop.Bat", text);
+            System.IO.File.WriteAllText(@"C:\Users\Jens Andersen\Desktop\testJens.txt", text);
         }
 
         private static string translate(string Command)
@@ -111,5 +111,4 @@ namespace Sokoban_solver
             return "";
         }
     }
-}
 }
