@@ -148,11 +148,7 @@ namespace Sokoban_solver
                 case "D":
                     return false;
                 case "G":
-                    if (checkForDeadLock(newPosition))
-                    {
-                        return true;
-                    }
-                    return false;
+                    return true;
                 default:
                     return false;
             }

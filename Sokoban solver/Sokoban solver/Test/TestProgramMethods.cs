@@ -40,15 +40,32 @@ namespace Sokoban_solver.Test
         [Test]
         public void isGameSolvedTest()
         {
-            string[,] solvedMap = new string[YRows, XCollums] {
-                                               { "D", "+", "+", "W" },
-                                               { "+", "P", "+", "+" },
-                                               { "+", "W", "+", "D" } };
+            // Only works for 2 goal maps
+            //string[,] solvedMap = new string[YRows, XCollums] {
+            //                                   { "D", "+", "+", "W" },
+            //                                   { "+", "P", "+", "+" },
+            //                                   { "+", "W", "+", "D" } };
 
-            Program.ListOfStates.Add(new State(solvedMap).ToString());
 
-            var test = new MovementHandler(solvedMap, startPosition);
-            Assert.IsTrue(Program.isGameSolved(test));
+            //var test = new MovementHandler(solvedMap, startPosition);
+            //Assert.IsTrue(Program.isGameSolved(test));
+
+            //Test big map
+            string[,] map2 = new string[10, 5] {
+                                               { "+", "+", "+", "D", "+" },
+                                               { "+", "+", "+", "+", "+" },
+                                               { "D", "+", "D", "+", "D" },
+                                               { "+", "+", "W", "+", "W" },
+                                               { "+", "D", "D", "+", "+" },
+                                               { "W", "W", "+", "D", "+" },
+                                               { "W", "W", "+", "W", "+" },
+                                               { "+", "D", "D", "+", "+" },
+                                               { "+", "D", "+", "+", "+" },
+                                               { "+", "+", "+", "W", "W" }, };
+
+            var test2 = new MovementHandler(map2, startPosition);
+
+            Assert.IsTrue(Program.isGameSolved(test2));
         }
     }
 }
