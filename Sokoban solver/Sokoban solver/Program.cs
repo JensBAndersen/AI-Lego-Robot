@@ -46,7 +46,7 @@ namespace Sokoban_solver
         static void Main(string[] args)
         {
 
-            Console.WriteLine("V25");
+            Console.WriteLine("V26");
             Console.WriteLine(MapHandler.readMap(G1));
             Console.WriteLine(MapHandler.readMap(G2));
             Console.WriteLine(MapHandler.readMap(G3));

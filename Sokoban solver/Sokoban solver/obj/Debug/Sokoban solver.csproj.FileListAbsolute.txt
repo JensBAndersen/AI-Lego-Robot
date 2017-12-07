@@ -15,22 +15,6 @@ c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cec
 c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.dll
 c:\users\bongfeldt\source\repos\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.xml
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csproj.CoreCompileInputs.cache
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\NUnit3.TestAdapter.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.api.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Pdb.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Mdb.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Rocks.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe.config
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.pdb
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.dll
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.xml
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csprojResolveAssemblyReference.cache
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.exe
-C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.pdb
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\NUnit3.TestAdapter.dll
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.dll
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.api.dll
@@ -48,3 +32,19 @@ C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csproj.CoreCompileInputs.cache
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.exe
 C:\Users\Bongfeldt\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.pdb
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.engine.api.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Mono.Cecil.Rocks.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe.config
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.exe
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\Sokoban solver.pdb
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.dll
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\bin\Debug\nunit.framework.xml
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csprojResolveAssemblyReference.cache
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.csproj.CoreCompileInputs.cache
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.exe
+C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\Sokoban solver\Sokoban solver\obj\Debug\Sokoban solver.pdb
