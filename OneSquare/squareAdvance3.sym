@@ -1,0 +1,1504 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001followLine	6	1	0	4	20
+1	__signed_stack_003Executor	6	1	4	4	2
+2	__signed_stack_002Executor	6	1	8	4	2
+3	__signed_stack_001lTurn	6	1	12	4	2
+4	__signed_stack_003oneSquare	6	1	16	4	2
+5	__signed_stack_002oneSquare	6	1	20	4	2
+6	__signed_stack_001oneSquare	6	1	24	4	6
+7	__signed_stack_001Executor	6	1	28	4	6
+8	__DU0turnSens	5	1	32	4	13
+9	__D0turnSens	6	1	36	4	20
+10	__DU0smallAdvance	5	1	40	4	4
+11	__D0SetSensorLight_inline_setupNXT	6	1	44	4	6
+12	__D0strlen_inline_Executor	6	1	48	4	2
+13	__D0labs_inline_readRotation	6	1	52	4	4
+14	__DU0SetSensorLight_inline_setupNXT	5	1	56	4	15
+15	__Wait_7qG2_ms_7qG2_000_inline_smallAdvance	5	1	60	4	2
+16	__labs_7qG2_n_7qG2_000_inline_readRotation	6	1	64	4	4
+17	__readRotation_7qG2_thresh_7qG2_000	6	1	68	4	7
+18	__Wait_7qG2_ms_7qG2_000_inline_oneSquare	5	1	72	4	4
+19	__Wait_7qG2_ms_7qG2_000_inline_rTurn	5	1	76	4	4
+20	__Wait_7qG2_ms_7qG2_000_inline_lTurn	5	1	80	4	4
+21	__Wait_7qG2_ms_7qG2_000_inline_revSquare	5	1	84	4	4
+22	__followLine_7qG2_pwr_7qG2_000	6	1	88	4	7
+23	__signed_stack_001revSquare	6	1	92	4	4
+24	__signed_stack_001readRotation	6	1	96	4	4
+25	__signed_stack_001powerMotors	6	1	100	4	18
+26	__signed_stack_001rTurn	6	1	104	4	2
+27	rRot	6	1	108	4	3
+28	lRot	6	1	112	4	3
+29	__signed_stack_001turnSens	6	1	116	4	6
+30	__D0smallAdvance	6	1	120	4	3
+31	__D0lTurn	6	1	124	4	10
+32	__DU0lTurn	5	1	128	4	8
+33	__D0oneSquare	6	1	132	4	21
+34	__D0followLine	6	1	136	4	32
+35	__SPTArgsMutex	9	0	140	4	4
+36	__D0Executor	6	1	144	4	9
+37	__OnRevMutex	9	0	148	4	12
+38	__DU0oneSquare	5	1	152	4	12
+39	__DU0revSquare	5	1	156	4	4
+40	__D0rTurn	6	1	160	4	10
+41	__DU0rTurn	5	1	164	4	8
+42	__D0revSquare	6	1	168	4	10
+43	__D0readRotation	6	1	172	4	8
+44	__D0powerMotors	6	1	176	4	50
+45	__DU0readRotation	5	1	180	4	7
+46	rMotorBias	4	1	184	2	4
+47	lMotorBias	4	0	186	2	4
+48	__powerMotors_7qG2_dir_7qG2_000	4	1	188	2	16
+49	moveDir	4	0	190	2	4
+50	__oneSquare_7qG2_squareCounter_7qG2_000	4	1	192	2	4
+51	__oneSquare_7qG2_numOfSquares_7qG2_000	4	1	194	2	3
+52	__lTurn_7qG2_numRot_7qG2_000	4	1	196	2	3
+53	__lTurn_7qG2_initRotNum_7qG2_000	4	1	198	2	3
+54	__followLine_7qG2_buffeLeft_7qG2_000	4	1	200	2	3
+55	__Executor_7qG2_i_7qG2_001	4	1	202	2	5
+56	__followLine_7qG2_bufferRight_7qG2_000	4	1	204	2	3
+57	__rTurn_7qG2_initRotNum_7qG2_000	4	1	206	2	2
+58	__rTurn_7qG2_numRot_7qG2_000	4	1	208	2	2
+59	__followLine_return	1	1	210	1	5
+60	__oneSquare_7qG2_canPresent_7qG2_000	1	1	211	1	2
+61	__oneSquare_return	1	1	212	1	3
+62	__smallAdvance_7qG2_finish_7qG2_000	1	1	213	1	3
+63	__smallAdvance_return	1	1	214	1	4
+64	__constVal0	2	1	215	1	77
+65	__readRotation_return	1	1	216	1	9
+66	__constVal1	2	0	217	1	15
+67	__constVal3	2	0	218	1	21
+68	__oneSquare_7qG2_finished_7qG2_000	1	1	219	1	5
+69	__rTurn_7qG2_initRot_7qG2_000	1	1	220	1	3
+70	__rTurn_return	1	1	221	1	3
+71	__lTurn_7qG2_found_7qG2_000	1	1	222	1	3
+72	____initialize_global_data_return	1	1	223	1	3
+73	__Executor_return	1	1	224	1	3
+74	__rTurn_7qG2_found_7qG2_000	1	1	225	1	3
+75	__lTurn_7qG2_initRot_7qG2_000	1	1	226	1	3
+76	__revSquare_7qG2_finished_7qG2_000	1	1	227	1	4
+77	__revSquare_return	1	1	228	1	3
+78	__constVal32	2	0	229	1	64
+79	__OnRev_Tmp	2	1	230	1	12
+80	__lTurn_return	1	1	231	1	4
+81	__turnSens_return	1	1	232	1	7
+82	____ResetSensorSubroutine_return	1	1	233	1	6
+83	lMotor	1	0	234	1	4
+84	rMotor	1	1	235	1	4
+85	__ResetSensorTmp	1	1	236	1	2
+86	SensorBack	1	1	237	1	3
+87	SensorRight	1	1	238	1	5
+88	SensorLeft	1	1	239	1	5
+89	__constVal2	2	0	240	1	1
+90	__PFTmp	1	1	241	1	1
+91	__constVal64	2	0	242	1	7
+92	bSensor	1	0	243	1	1
+93	canSensor	1	0	244	1	1
+94	rSensor	1	0	245	1	3
+95	lSensor	1	1	246	1	3
+96	__setupNXT_return	1	1	247	1	3
+97	__powerMotors_return	1	1	248	1	15
+98	__powerMotors_7qG2_pwr_7qG2_000	2	1	249	1	17
+99	__SetSensorTouch_7qG2_port_7qG2_000_inline_setupNXT	1	1	250	1	4
+100	__constVal96	2	0	251	1	21
+101	__ResetSensorPort	1	1	252	1	6
+102	__constValNeg1	2	0	253	1	3
+103	__constVal63	2	0	254	1	21
+104	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	255	1	3
+105	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	256	1	6
+106	__SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT	1	1	257	1	6
+107	__SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT	1	1	258	1	15
+108	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	259	1	6
+109	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	260	1	6
+110	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT	1	1	261	1	6
+111	__SPTArgs	8	0	5	8	12
+112	__SPTArgs.Result	2	1	264	1	12
+113	__SPTArgs.Frequency	3	1	266	2	12
+114	__SPTArgs.Duration	3	1	268	2	12
+115	__SPTArgs.Loop	1	1	270	1	12
+116	__SPTArgs.Volume	1	1	271	1	12
+117	__constStr0016	7	0	272	4	1
+118	__constStr0016.__constStr0016_type	1	1	0	1	0
+119	__constStr0015	7	0	274	4	1
+120	__constStr0015.__constStr0015_type	1	1	0	1	0
+121	__constStr0017	7	0	276	4	1
+122	__constStr0017.__constStr0017_type	1	1	0	1	0
+123	__constStr0018	7	0	278	4	1
+124	__constStr0018.__constStr0018_type	1	1	0	1	0
+125	__strretvalExecutor	7	0	280	4	2
+126	__strretvalExecutor.__strretvalExecutor_type	1	0	0	1	0
+127	__constStr0014	7	0	282	4	1
+128	__constStr0014.__constStr0014_type	1	1	0	1	0
+129	__OUT_AB	7	0	284	4	16
+130	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+131	readCmdList	7	0	286	4	2
+132	readCmdList.readCmdList_type	1	0	0	1	0
+133	__strbufExecutor	7	0	288	4	13
+134	__strbufExecutor.__strbufExecutor_type	1	0	0	1	0
+135	__Executor_7qG2_cmdCurrent_7qG2_002	7	0	290	4	3
+136	__Executor_7qG2_cmdCurrent_7qG2_002.__Executor_7qG2_cmdCurrent_7qG2_002_type	1	0	0	1	0
+137	__strlen_7qG2_str_7qG2_000_inline_Executor	7	0	292	4	2
+138	__strlen_7qG2_str_7qG2_000_inline_Executor.__strlen_7qG2_str_7qG2_000_inline_Executor_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	429	0	#line 429 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	430	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	429	2	#line 429 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	432	2	#line 432 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	433	2		subcall setupNXT, __setupNXT_return
+0	432	4	#line 432 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	434	4	#line 434 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	435	4		subcall Executor, __Executor_return
+0	434	6	#line 434 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+0	435	6		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	55	0	#line 55 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	56	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 3
+2	55	3	#line 55 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	56	3	#line 56 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	57	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	4313	5	#line 4313 "NXCDefs.h"
+2	4314	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4313	7	#line 4313 "NXCDefs.h"
+2	4313	7	#line 4313 "NXCDefs.h"
+2	4314	7		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	4313	9	#line 4313 "NXCDefs.h"
+2	4314	9		tst 5, __D0SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4313	12	#line 4313 "NXCDefs.h"
+2	4314	12		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_setupNXT
+2	4313	15	#line 4313 "NXCDefs.h"
+2	4314	15		set __DU0SetSensorLight_inline_setupNXT, 5
+2	4313	18	#line 4313 "NXCDefs.h"
+2	4313	18	#line 4313 "NXCDefs.h"
+2	4314	18		jmp __001__ASM_Label_5
+2	4313	20	#line 4313 "NXCDefs.h"
+2	4314	20		set __DU0SetSensorLight_inline_setupNXT, 6
+2	4313	23	#line 4313 "NXCDefs.h"
+2	4313	23	#line 4313 "NXCDefs.h"
+2	4314	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4247	25	#line 4247 "NXCDefs.h"
+2	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	4247	29	#line 4247 "NXCDefs.h"
+2	4314	29	#line 4314 "NXCDefs.h"
+2	4314	29	#line 4314 "NXCDefs.h"
+2	4315	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4314	31	#line 4314 "NXCDefs.h"
+2	4314	31	#line 4314 "NXCDefs.h"
+2	4315	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	4314	34	#line 4314 "NXCDefs.h"
+2	4260	34	#line 4260 "NXCDefs.h"
+2	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	4260	38	#line 4260 "NXCDefs.h"
+2	4315	38	#line 4315 "NXCDefs.h"
+2	4315	38	#line 4315 "NXCDefs.h"
+2	4316	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4315	40	#line 4315 "NXCDefs.h"
+2	4278	40	#line 4278 "NXCDefs.h"
+2	4279	40	#pragma macro 4
+2	4279	40		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	4806	44	#line 4806 "NXCDefs.h"
+2	4278	44	#line 4278 "NXCDefs.h"
+2	4316	44	#line 4316 "NXCDefs.h"
+2	56	44	#line 56 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	56	44	#line 56 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	57	44		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 0
+2	56	47	#line 56 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	57	47	#line 57 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	58	47		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	4313	49	#line 4313 "NXCDefs.h"
+2	4314	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4313	51	#line 4313 "NXCDefs.h"
+2	4313	51	#line 4313 "NXCDefs.h"
+2	4314	51		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	4313	53	#line 4313 "NXCDefs.h"
+2	4314	53		tst 5, __D0SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4313	56	#line 4313 "NXCDefs.h"
+2	4314	56		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_setupNXT
+2	4313	59	#line 4313 "NXCDefs.h"
+2	4314	59		set __DU0SetSensorLight_inline_setupNXT, 5
+2	4313	62	#line 4313 "NXCDefs.h"
+2	4313	62	#line 4313 "NXCDefs.h"
+2	4314	62		jmp __002__ASM_Label_5
+2	4313	64	#line 4313 "NXCDefs.h"
+2	4314	64		set __DU0SetSensorLight_inline_setupNXT, 6
+2	4313	67	#line 4313 "NXCDefs.h"
+2	4313	67	#line 4313 "NXCDefs.h"
+2	4314	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4247	69	#line 4247 "NXCDefs.h"
+2	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	4247	73	#line 4247 "NXCDefs.h"
+2	4314	73	#line 4314 "NXCDefs.h"
+2	4314	73	#line 4314 "NXCDefs.h"
+2	4315	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4314	75	#line 4314 "NXCDefs.h"
+2	4314	75	#line 4314 "NXCDefs.h"
+2	4315	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	4314	78	#line 4314 "NXCDefs.h"
+2	4260	78	#line 4260 "NXCDefs.h"
+2	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	4260	82	#line 4260 "NXCDefs.h"
+2	4315	82	#line 4315 "NXCDefs.h"
+2	4315	82	#line 4315 "NXCDefs.h"
+2	4316	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4315	84	#line 4315 "NXCDefs.h"
+2	4278	84	#line 4278 "NXCDefs.h"
+2	4279	84	#pragma macro 4
+2	4279	84		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	4869	88	#line 4869 "NXCDefs.h"
+2	4278	88	#line 4278 "NXCDefs.h"
+2	4316	88	#line 4316 "NXCDefs.h"
+2	57	88	#line 57 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	57	88	#line 57 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	58	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT, 1
+2	57	91	#line 57 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	58	91	#line 58 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	59	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT, __constVal1
+2	4313	93	#line 4313 "NXCDefs.h"
+2	4314	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4313	95	#line 4313 "NXCDefs.h"
+2	4313	95	#line 4313 "NXCDefs.h"
+2	4314	95		mov __DU0SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_bActive_7qG2_000_inline_setupNXT
+2	4313	97	#line 4313 "NXCDefs.h"
+2	4314	97		tst 5, __D0SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4313	100	#line 4313 "NXCDefs.h"
+2	4314	100		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_setupNXT
+2	4313	103	#line 4313 "NXCDefs.h"
+2	4314	103		set __DU0SetSensorLight_inline_setupNXT, 5
+2	4313	106	#line 4313 "NXCDefs.h"
+2	4313	106	#line 4313 "NXCDefs.h"
+2	4314	106		jmp __003__ASM_Label_5
+2	4313	108	#line 4313 "NXCDefs.h"
+2	4314	108		set __DU0SetSensorLight_inline_setupNXT, 6
+2	4313	111	#line 4313 "NXCDefs.h"
+2	4313	111	#line 4313 "NXCDefs.h"
+2	4314	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __DU0SetSensorLight_inline_setupNXT
+2	4247	113	#line 4247 "NXCDefs.h"
+2	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 0
+2	4247	117	#line 4247 "NXCDefs.h"
+2	4314	117	#line 4314 "NXCDefs.h"
+2	4314	117	#line 4314 "NXCDefs.h"
+2	4315	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4314	119	#line 4314 "NXCDefs.h"
+2	4314	119	#line 4314 "NXCDefs.h"
+2	4315	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, 128
+2	4314	122	#line 4314 "NXCDefs.h"
+2	4260	122	#line 4260 "NXCDefs.h"
+2	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, 1
+2	4260	126	#line 4260 "NXCDefs.h"
+2	4315	126	#line 4315 "NXCDefs.h"
+2	4315	126	#line 4315 "NXCDefs.h"
+2	4316	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_setupNXT, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4315	128	#line 4315 "NXCDefs.h"
+2	4278	128	#line 4278 "NXCDefs.h"
+2	4279	128	#pragma macro 4
+2	4279	128		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_setupNXT
+2	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	4932	132	#line 4932 "NXCDefs.h"
+2	4278	132	#line 4278 "NXCDefs.h"
+2	4316	132	#line 4316 "NXCDefs.h"
+2	58	132	#line 58 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	58	132	#line 58 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	59	132		set __SetSensorTouch_7qG2_port_7qG2_000_inline_setupNXT, 2
+2	58	135	#line 58 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	4302	135	#line 4302 "NXCDefs.h"
+2	4303	135	#pragma macro 6
+2	4303	135		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_setupNXT, 0
+2	4303	139		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_setupNXT, 1
+2	4303	143		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_setupNXT
+2	4303	145		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	4945	147	#line 4945 "NXCDefs.h"
+2	4302	147	#line 4302 "NXCDefs.h"
+2	60	147	#line 60 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	61	147	#line 61 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	62	147	#pragma macro 7
+2	62	147		setout __OUT_AB, 0, __constVal64
+2	4949	152	#line 4949 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	61	152	#line 61 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	63	152	#line 63 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+2	64	152		subret __setupNXT_return
+3	64	0	#line 64 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	65	0		mov __signed_stack_001powerMotors, moveDir
+3	64	2	#line 64 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	64	2	#line 64 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	65	2		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	64	4	#line 64 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	65	4		cmp 5, __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	65	8	#line 65 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	66	8		brtst 4, __ASM_Label_499, __D0powerMotors
+3	66	11	#line 66 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	67	11	#pragma macro 7
+3	67	11		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4979	34	#line 4979 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	66	34	#line 66 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	67	34	#line 67 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	68	34	#pragma macro 7
+3	68	34		setout __OUT_AB, 0, __constVal64
+3	4982	39	#line 4982 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	67	39	#line 67 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	68	39	#line 68 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	69	39		mov moveDir, __powerMotors_7qG2_dir_7qG2_000
+3	68	41	#line 68 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	68	41	#line 68 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	69	41	#line 69 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	70	41		set lRot, 0
+3	69	44	#line 69 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	69	44	#line 69 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	70	44	#line 70 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	71	44		set rRot, 0
+3	70	47	#line 70 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	70	47	#line 70 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	71	47	#line 71 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	71	47	#line 71 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	72	47		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	75	49		brcmp 4, __ASM_Label_509, __constValNeg1, __D0powerMotors
+3	76	53		brcmp 4, __ASM_Label_516, __constVal0, __D0powerMotors
+3	77	57		brcmp 4, __ASM_Label_523, __constVal1, __D0powerMotors
+3	78	61		brcmp 4, __ASM_Label_530, __constVal2, __D0powerMotors
+3	79	65		jmp __ASM_Label_535
+3	73	67	#line 73 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	73	67	#line 73 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	67		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	73	69	#line 73 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	73	69	#line 73 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	69		mov __D0powerMotors, rMotorBias
+3	73	71	#line 73 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	71		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	74	75	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	75	75	#pragma macro 10
+3	75	75		acquire __OnRevMutex
+3	75	76		neg __OnRev_Tmp, __D0powerMotors
+3	75	79		setout rMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	75	102		release __OnRevMutex
+3	5027	103	#line 5027 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	103	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	103	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	75	103		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	74	105	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	74	105	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	75	105		mov __D0powerMotors, lMotorBias
+3	74	107	#line 74 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	75	107		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	75	111	#line 75 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	76	111	#pragma macro 10
+3	76	111		acquire __OnRevMutex
+3	76	112		neg __OnRev_Tmp, __D0powerMotors
+3	76	115		setout lMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	76	138		release __OnRevMutex
+3	5042	139	#line 5042 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	75	139	#line 75 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	76	139	#line 76 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	77	139		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	76	141	#line 76 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	77	141		subret __powerMotors_return
+3	76	143	#line 76 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	77	143	#line 77 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	78	143		jmp __ASM_Label_508
+3	77	145	#line 77 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	78	145	#line 78 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	78	145	#line 78 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	145		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	78	147	#line 78 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	78	147	#line 78 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	147		mov __D0powerMotors, rMotorBias
+3	78	149	#line 78 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	149		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	79	153	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	80	153	#pragma macro 7
+3	80	153		setout rMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	5069	176	#line 5069 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	176	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	176	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	80	176		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	79	178	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	79	178	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	80	178		mov __D0powerMotors, lMotorBias
+3	79	180	#line 79 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	80	180		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	80	184	#line 80 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	81	184	#pragma macro 7
+3	81	184		setout lMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	5084	207	#line 5084 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	80	207	#line 80 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	81	207	#line 81 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	82	207		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	81	209	#line 81 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	82	209		subret __powerMotors_return
+3	81	211	#line 81 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	82	211	#line 82 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	83	211		jmp __ASM_Label_508
+3	82	213	#line 82 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	83	213	#line 83 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	83	213	#line 83 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	213		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	83	215	#line 83 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	83	215	#line 83 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	215		mov __D0powerMotors, rMotorBias
+3	83	217	#line 83 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	217		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	84	221	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	85	221	#pragma macro 10
+3	85	221		acquire __OnRevMutex
+3	85	222		neg __OnRev_Tmp, __D0powerMotors
+3	85	225		setout rMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	85	248		release __OnRevMutex
+3	5111	249	#line 5111 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	249	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	249	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	85	249		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	84	251	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	84	251	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	85	251		mov __D0powerMotors, lMotorBias
+3	84	253	#line 84 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	85	253		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	85	257	#line 85 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	86	257	#pragma macro 7
+3	86	257		setout lMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	5126	280	#line 5126 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	85	280	#line 85 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	86	280	#line 86 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	87	280		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	86	282	#line 86 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	87	282		subret __powerMotors_return
+3	86	284	#line 86 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	87	284	#line 87 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	88	284		jmp __ASM_Label_508
+3	87	286	#line 87 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	88	286	#line 88 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	88	286	#line 88 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	286		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	88	288	#line 88 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	88	288	#line 88 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	288		mov __D0powerMotors, rMotorBias
+3	88	290	#line 88 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	290		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	89	294	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	90	294	#pragma macro 7
+3	90	294		setout rMotor, 2, __D0powerMotors, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	5153	317	#line 5153 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	317	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	317	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	90	317		mov __signed_stack_001powerMotors, __powerMotors_7qG2_pwr_7qG2_000
+3	89	319	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	89	319	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	90	319		mov __D0powerMotors, lMotorBias
+3	89	321	#line 89 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	90	321		sub __D0powerMotors, __signed_stack_001powerMotors, __D0powerMotors
+3	90	325	#line 90 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	91	325	#pragma macro 10
+3	91	325		acquire __OnRevMutex
+3	91	326		neg __OnRev_Tmp, __D0powerMotors
+3	91	329		setout lMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	91	352		release __OnRevMutex
+3	5168	353	#line 5168 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	90	353	#line 90 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	92	353	#line 92 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	93	353		jmp __ASM_Label_508
+3	92	355	#line 92 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	93	355	#line 93 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	94	355	#line 94 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	95	355	#pragma macro 7
+3	95	355		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	5176	378	#line 5176 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	94	378	#line 94 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	95	378	#line 95 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	96	378		mov __D0powerMotors, __powerMotors_7qG2_dir_7qG2_000
+3	95	380	#line 95 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	96	380		subret __powerMotors_return
+3	95	382	#line 95 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	96	382	#line 96 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	96	382	#line 96 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	99	382	#line 99 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	99	382	#line 99 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+3	100	382		subret __powerMotors_return
+4	137	0	#line 137 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	138	0		set __signed_stack_001followLine, 32
+4	137	3	#line 137 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	137	3	#line 137 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	138	3		getin __D0followLine, __constVal0, 4
+4	137	7	#line 137 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	138	7		sub __followLine_7qG2_bufferRight_7qG2_000, __signed_stack_001followLine, __D0followLine
+4	137	11	#line 137 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	138	11	#line 138 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	139	11		set __signed_stack_001followLine, 34
+4	138	14	#line 138 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	138	14	#line 138 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	139	14		getin __D0followLine, __constVal1, 4
+4	138	18	#line 138 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	139	18		sub __followLine_7qG2_buffeLeft_7qG2_000, __signed_stack_001followLine, __D0followLine
+4	138	22	#line 138 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	139	22	#line 139 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	140	22		mov __signed_stack_001followLine, moveDir
+4	139	24	#line 139 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	139	24	#line 139 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	140	24		set __D0followLine, 0
+4	139	27	#line 139 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	140	27		cmp 4, __D0followLine, __signed_stack_001followLine, __D0followLine
+4	141	31	#line 141 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	31		brtst 4, __ASM_Label_631, __D0followLine
+4	141	34	#line 141 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	34		mov __signed_stack_001followLine, __followLine_7qG2_pwr_7qG2_000
+4	141	36	#line 141 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	141	36	#line 141 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	36		mov __D0followLine, __followLine_7qG2_bufferRight_7qG2_000
+4	141	38	#line 141 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	38		add __D0followLine, __signed_stack_001followLine, __D0followLine
+4	142	42	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	42	#pragma macro 7
+4	143	42		setout __constVal0, 2, __D0followLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	5765	65	#line 5765 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	65	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	65	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	65		mov __signed_stack_001followLine, __followLine_7qG2_pwr_7qG2_000
+4	142	67	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	67	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	67		set __D0followLine, 3
+4	142	70	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	70		sub __signed_stack_001followLine, __signed_stack_001followLine, __D0followLine
+4	142	74	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	142	74	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	74		mov __D0followLine, __followLine_7qG2_buffeLeft_7qG2_000
+4	142	76	#line 142 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	76		add __D0followLine, __signed_stack_001followLine, __D0followLine
+4	143	80	#line 143 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	144	80	#pragma macro 7
+4	144	80		setout __constVal1, 2, __D0followLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	5788	103	#line 5788 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	143	103	#line 143 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	144	103	#line 144 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	145	103		jmp __ASM_Label_636
+4	144	105	#line 144 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	145	105		mov __signed_stack_001followLine, moveDir
+4	144	107	#line 144 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	144	107	#line 144 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	145	107		mov __D0followLine, __constValNeg1
+4	144	109	#line 144 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	145	109		cmp 4, __D0followLine, __signed_stack_001followLine, __D0followLine
+4	145	113	#line 145 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	113		brtst 4, __ASM_Label_639, __D0followLine
+4	145	116	#line 145 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	116		mov __signed_stack_001followLine, __followLine_7qG2_pwr_7qG2_000
+4	145	118	#line 145 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	145	118	#line 145 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	118		mov __D0followLine, __followLine_7qG2_bufferRight_7qG2_000
+4	145	120	#line 145 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	120		add __D0followLine, __signed_stack_001followLine, __D0followLine
+4	146	124	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	124	#pragma macro 10
+4	147	124		acquire __OnRevMutex
+4	147	125		neg __OnRev_Tmp, __D0followLine
+4	147	128		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	147	151		release __OnRevMutex
+4	5820	152	#line 5820 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	152	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	152	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	152		mov __signed_stack_001followLine, __followLine_7qG2_pwr_7qG2_000
+4	146	154	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	154	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	154		set __D0followLine, 3
+4	146	157	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	157		sub __signed_stack_001followLine, __signed_stack_001followLine, __D0followLine
+4	146	161	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	146	161	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	161		mov __D0followLine, __followLine_7qG2_buffeLeft_7qG2_000
+4	146	163	#line 146 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	163		add __D0followLine, __signed_stack_001followLine, __D0followLine
+4	147	167	#line 147 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	148	167	#pragma macro 10
+4	148	167		acquire __OnRevMutex
+4	148	168		neg __OnRev_Tmp, __D0followLine
+4	148	171		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	148	194		release __OnRevMutex
+4	5843	195	#line 5843 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	147	195	#line 147 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	150	195	#line 150 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	150	195	#line 150 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	150	195	#line 150 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+4	151	195		subret __followLine_return
+5	151	0	#line 151 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	152	0		getout __labs_7qG2_n_7qG2_000_inline_readRotation, __constVal0, 14
+5	151	4	#line 151 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	19782	4	#line 19782 "NXCDefs.h"
+5	19783	4		mov __D0labs_inline_readRotation, __labs_7qG2_n_7qG2_000_inline_readRotation
+5	19782	6	#line 19782 "NXCDefs.h"
+5	19783	6		abs lRot, __D0labs_inline_readRotation
+5	19782	9	#line 19782 "NXCDefs.h"
+5	19782	9	#line 19782 "NXCDefs.h"
+5	152	9	#line 152 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	152	9	#line 152 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	152	9	#line 152 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	152	9	#line 152 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	153	9		getout __labs_7qG2_n_7qG2_000_inline_readRotation, __constVal1, 14
+5	152	13	#line 152 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	19782	13	#line 19782 "NXCDefs.h"
+5	19783	13		mov __D0labs_inline_readRotation, __labs_7qG2_n_7qG2_000_inline_readRotation
+5	19782	15	#line 19782 "NXCDefs.h"
+5	19783	15		abs rRot, __D0labs_inline_readRotation
+5	19782	18	#line 19782 "NXCDefs.h"
+5	19782	18	#line 19782 "NXCDefs.h"
+5	154	18	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	154	18	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	154	18	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	154	18	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	18		mov __signed_stack_001readRotation, lRot
+5	154	20	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	154	20	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	20		mov __D0readRotation, __readRotation_7qG2_thresh_7qG2_000
+5	154	22	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	22		cmp 1, __D0readRotation, __signed_stack_001readRotation, __D0readRotation
+5	154	26	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	26		brtst 4, __ASM_Label_653, __D0readRotation
+5	154	29	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	29		mov __signed_stack_001readRotation, rRot
+5	154	31	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	154	31	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	31		mov __D0readRotation, __readRotation_7qG2_thresh_7qG2_000
+5	154	33	#line 154 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	155	33		cmp 1, __D0readRotation, __signed_stack_001readRotation, __D0readRotation
+5	155	37	#line 155 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	156	37		brtst 4, __ASM_Label_658, __D0readRotation
+5	156	40	#line 156 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	157	40		set __DU0readRotation, 1
+5	156	43	#line 156 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	156	43	#line 156 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	157	43		subret __readRotation_return
+5	156	45	#line 156 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	158	45	#line 158 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	159	45		jmp __ASM_Label_661
+5	159	47	#line 159 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	160	47		set __DU0readRotation, 0
+5	159	50	#line 159 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	159	50	#line 159 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	160	50		subret __readRotation_return
+5	159	52	#line 159 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	159	52	#line 159 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	161	52	#line 161 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+5	162	52		subret __readRotation_return
+6	163	0	#line 163 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	164	0	#pragma macro 7
+6	164	0		setout __OUT_AB, 0, __constVal64
+6	5969	5	#line 5969 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	163	5	#line 163 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	163	5	#line 163 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	164	5		set __Wait_7qG2_ms_7qG2_000_inline_smallAdvance, 1
+6	163	8	#line 163 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	8551	8	#line 8551 "NXCDefs.h"
+6	8552	8		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_smallAdvance
+6	8551	11	#line 8551 "NXCDefs.h"
+6	164	11	#line 164 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	165	11	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	166	11		set __smallAdvance_7qG2_finish_7qG2_000, 0
+6	165	14	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	165	14	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	166	14		set __powerMotors_7qG2_dir_7qG2_000, 0
+6	165	17	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	165	17	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	166	17		set __powerMotors_7qG2_pwr_7qG2_000, 50
+6	165	20	#line 165 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	166	20	#line 166 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	167	20		subcall powerMotors, __powerMotors_return
+6	166	22	#line 166 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	167	22		mov __D0smallAdvance, __D0powerMotors
+6	166	24	#line 166 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	166	24	#line 166 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	167	24		mov __DU0smallAdvance, __smallAdvance_7qG2_finish_7qG2_000
+6	166	26	#line 166 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	167	26		not __DU0smallAdvance, __DU0smallAdvance
+6	167	29	#line 167 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	168	29		tst 5, __D0smallAdvance, __DU0smallAdvance
+6	167	32	#line 167 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	168	32		brtst 4, __ASM_Label_673, __D0smallAdvance
+6	167	35	#line 167 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	168	35		set __readRotation_7qG2_thresh_7qG2_000, 200
+6	167	38	#line 167 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	168	38	#line 168 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	169	38		subcall readRotation, __readRotation_return
+6	168	40	#line 168 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	169	40		mov __smallAdvance_7qG2_finish_7qG2_000, __DU0readRotation
+6	168	42	#line 168 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	168	42	#line 168 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	172	42	#line 172 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	173	42		jmp __ASM_Label_672
+6	172	44	#line 172 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	172	44	#line 172 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+6	173	44		subret __smallAdvance_return
+7	196	0	#line 196 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	197	0	#pragma macro 7
+7	197	0		setout __OUT_AB, 0, __constVal64
+7	6162	5	#line 6162 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	196	5	#line 196 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	196	5	#line 196 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	197	5		getin __oneSquare_7qG2_canPresent_7qG2_000, canSensor, 4
+7	196	9	#line 196 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	198	9	#line 198 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	199	9		set __oneSquare_7qG2_finished_7qG2_000, 0
+7	198	12	#line 198 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	200	12	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	12		set __oneSquare_7qG2_squareCounter_7qG2_000, 0
+7	200	15	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	200	15	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	15		set __powerMotors_7qG2_dir_7qG2_000, 0
+7	200	18	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	200	18	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	18		set __powerMotors_7qG2_pwr_7qG2_000, 75
+7	200	21	#line 200 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	21	#line 201 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	202	21		subcall powerMotors, __powerMotors_return
+7	201	23	#line 201 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	23	#line 201 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	201	23	#line 201 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	202	23		set __Wait_7qG2_ms_7qG2_000_inline_oneSquare, 200
+7	201	26	#line 201 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	8551	26	#line 8551 "NXCDefs.h"
+7	8552	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_oneSquare
+7	8551	29	#line 8551 "NXCDefs.h"
+7	203	29	#line 203 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	203	29	#line 203 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	204	29		mov __DU0oneSquare, __oneSquare_7qG2_canPresent_7qG2_000
+7	203	31	#line 203 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	204	31		not __DU0oneSquare, __DU0oneSquare
+7	204	34	#line 204 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	205	34		tst 5, __D0oneSquare, __DU0oneSquare
+7	204	37	#line 204 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	205	37		brtst 4, __ASM_Label_724, __D0oneSquare
+7	204	40	#line 204 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	205	40		mov __DU0oneSquare, __oneSquare_7qG2_finished_7qG2_000
+7	204	42	#line 204 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	205	42		not __DU0oneSquare, __DU0oneSquare
+7	205	45	#line 205 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	45		tst 5, __D0oneSquare, __DU0oneSquare
+7	205	48	#line 205 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	48		brtst 4, __ASM_Label_726, __D0oneSquare
+7	205	51	#line 205 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	51		set __followLine_7qG2_pwr_7qG2_000, 90
+7	205	54	#line 205 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	54	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	54		subcall followLine, __followLine_return
+7	206	56	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	56	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	56		getin __signed_stack_001oneSquare, lSensor, 4
+7	206	60	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	60	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	60		set __D0oneSquare, 20
+7	206	63	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	63		cmp 0, __D0oneSquare, __signed_stack_001oneSquare, __D0oneSquare
+7	206	67	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	67		brtst 4, __ASM_Label_732, __D0oneSquare
+7	206	70	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	70		getin __signed_stack_001oneSquare, rSensor, 4
+7	206	74	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	206	74	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	74		set __D0oneSquare, 20
+7	206	77	#line 206 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	207	77		cmp 0, __D0oneSquare, __signed_stack_001oneSquare, __D0oneSquare
+7	207	81	#line 207 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	208	81		brtst 4, __ASM_Label_737, __D0oneSquare
+7	208	84	#line 208 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	209	84		add __oneSquare_7qG2_squareCounter_7qG2_000, __oneSquare_7qG2_squareCounter_7qG2_000, __constVal1
+7	208	88	#line 208 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	208	88	#line 208 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	209	88		mov __oneSquare_7qG2_squareCounter_7qG2_000, __oneSquare_7qG2_numOfSquares_7qG2_000
+7	208	90	#line 208 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	208	90	#line 208 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	209	90		mov __D0oneSquare, __oneSquare_7qG2_numOfSquares_7qG2_000
+7	209	92	#line 209 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	210	92		tst 5, __D0oneSquare, __D0oneSquare
+7	209	95	#line 209 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	210	95		brtst 4, __ASM_Label_742, __D0oneSquare
+7	210	98	#line 210 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	211	98		set __oneSquare_7qG2_finished_7qG2_000, 1
+7	210	101	#line 210 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	210	101	#line 210 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	211	101	#line 211 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	213	101	#line 213 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	214	101		jmp __ASM_Label_745
+7	215	103	#line 215 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	215	103	#line 215 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	216	103		jmp __ASM_Label_725
+7	215	105	#line 215 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	216	105	#line 216 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	217	105		subcall smallAdvance, __smallAdvance_return
+7	216	107	#line 216 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	217	107	#line 217 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	218	107	#pragma macro 7
+7	218	107		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	6310	130	#line 6310 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	217	130	#line 217 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	217	130	#line 217 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	218	130		set __Wait_7qG2_ms_7qG2_000_inline_oneSquare, 1
+7	217	133	#line 217 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	8551	133	#line 8551 "NXCDefs.h"
+7	8552	133		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_oneSquare
+7	8551	136	#line 8551 "NXCDefs.h"
+7	218	136	#line 218 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	220	136	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	136		jmp __ASM_Label_748
+7	220	138	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	138		set __signed_stack_001oneSquare, 1000
+7	220	141	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	220	141	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	141		set __signed_stack_002oneSquare, 200
+7	220	144	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	220	144	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	144		set __signed_stack_003oneSquare, 4
+7	220	147	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	220	147	#line 220 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	147		set __D0oneSquare, 0
+7	221	150	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	150		acquire __SPTArgsMutex
+7	221	151	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	151		mov __SPTArgs.Frequency, __signed_stack_001oneSquare
+7	221	153	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	153		mov __SPTArgs.Duration, __signed_stack_002oneSquare
+7	221	155	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	155		mov __SPTArgs.Volume, __signed_stack_003oneSquare
+7	221	157	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	157		mov __SPTArgs.Loop, __D0oneSquare
+7	221	159	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	159		syscall 10, __SPTArgs
+7	221	162	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	162		mov __D0oneSquare, __SPTArgs.Result
+7	221	164	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	164		release __SPTArgsMutex
+7	221	165	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	221	165	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	165		mov __DU0oneSquare, __oneSquare_7qG2_finished_7qG2_000
+7	221	167	#line 221 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	222	167		not __DU0oneSquare, __DU0oneSquare
+7	222	170	#line 222 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	223	170		tst 5, __D0oneSquare, __DU0oneSquare
+7	222	173	#line 222 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	223	173		brtst 4, __ASM_Label_758, __D0oneSquare
+7	222	176	#line 222 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	223	176		set __followLine_7qG2_pwr_7qG2_000, 50
+7	222	179	#line 222 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	223	179	#line 223 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	224	179		subcall followLine, __followLine_return
+7	223	181	#line 223 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	223	181	#line 223 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	224	181		set __readRotation_7qG2_thresh_7qG2_000, 290
+7	223	184	#line 223 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	224	184	#line 224 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	225	184		subcall readRotation, __readRotation_return
+7	224	186	#line 224 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	225	186		mov __oneSquare_7qG2_finished_7qG2_000, __DU0readRotation
+7	224	188	#line 224 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	224	188	#line 224 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	225	188	#line 225 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	226	188		jmp __ASM_Label_757
+7	225	190	#line 225 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	226	190	#line 226 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	227	190	#pragma macro 7
+7	227	190		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	6396	213	#line 6396 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	226	213	#line 226 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	230	213	#line 230 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	230	213	#line 230 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+7	231	213		subret __oneSquare_return
+8	232	0	#line 232 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	233	0	#pragma macro 7
+8	233	0		setout __OUT_AB, 0, __constVal64
+8	6406	5	#line 6406 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	232	5	#line 232 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	232	5	#line 232 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	233	5		set __Wait_7qG2_ms_7qG2_000_inline_revSquare, 1
+8	232	8	#line 232 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	8551	8	#line 8551 "NXCDefs.h"
+8	8552	8		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_revSquare
+8	8551	11	#line 8551 "NXCDefs.h"
+8	233	11	#line 233 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	234	11	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	11		set __revSquare_7qG2_finished_7qG2_000, 0
+8	234	14	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	234	14	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	14		mov __powerMotors_7qG2_dir_7qG2_000, __constValNeg1
+8	234	16	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	234	16	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	16		set __powerMotors_7qG2_pwr_7qG2_000, 75
+8	234	19	#line 234 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	19	#line 235 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	236	19		subcall powerMotors, __powerMotors_return
+8	235	21	#line 235 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	21	#line 235 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	235	21	#line 235 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	236	21		set __Wait_7qG2_ms_7qG2_000_inline_revSquare, 1000
+8	235	24	#line 235 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	8551	24	#line 8551 "NXCDefs.h"
+8	8552	24		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_revSquare
+8	8551	27	#line 8551 "NXCDefs.h"
+8	236	27	#line 236 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	236	27	#line 236 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	237	27		mov __DU0revSquare, __revSquare_7qG2_finished_7qG2_000
+8	236	29	#line 236 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	237	29		not __DU0revSquare, __DU0revSquare
+8	237	32	#line 237 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	32		tst 5, __D0revSquare, __DU0revSquare
+8	237	35	#line 237 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	35		brtst 4, __ASM_Label_778, __D0revSquare
+8	237	38	#line 237 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	38		set __followLine_7qG2_pwr_7qG2_000, 75
+8	237	41	#line 237 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	41	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	41		subcall followLine, __followLine_return
+8	238	43	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	43	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	43		getin __signed_stack_001revSquare, lSensor, 4
+8	238	47	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	47	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	47		set __D0revSquare, 20
+8	238	50	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	50		cmp 0, __D0revSquare, __signed_stack_001revSquare, __D0revSquare
+8	238	54	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	54		brtst 4, __ASM_Label_784, __D0revSquare
+8	238	57	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	57		getin __signed_stack_001revSquare, rSensor, 4
+8	238	61	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	238	61	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	61		set __D0revSquare, 20
+8	238	64	#line 238 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	239	64		cmp 0, __D0revSquare, __signed_stack_001revSquare, __D0revSquare
+8	239	68	#line 239 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	240	68		brtst 4, __ASM_Label_789, __D0revSquare
+8	240	71	#line 240 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	241	71		set __revSquare_7qG2_finished_7qG2_000, 1
+8	240	74	#line 240 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	240	74	#line 240 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	241	74	#line 241 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	242	74		jmp __ASM_Label_792
+8	241	76	#line 241 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	242	76		set __readRotation_7qG2_thresh_7qG2_000, 730
+8	241	79	#line 241 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	242	79	#line 242 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	243	79		subcall readRotation, __readRotation_return
+8	242	81	#line 242 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	243	81		mov __revSquare_7qG2_finished_7qG2_000, __DU0readRotation
+8	242	83	#line 242 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	242	83	#line 242 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	244	83	#line 244 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	244	83	#line 244 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	245	83		jmp __ASM_Label_777
+8	244	85	#line 244 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	245	85	#line 245 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	246	85		subcall smallAdvance, __smallAdvance_return
+8	245	87	#line 245 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	246	87	#line 246 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	247	87	#pragma macro 7
+8	247	87		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	6528	110	#line 6528 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	246	110	#line 246 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	248	110	#line 248 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+8	249	110		subret __revSquare_return
+9	329	0	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	0		getin __signed_stack_001turnSens, lSensor, 4
+9	329	4	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	329	4	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	4		set __D0turnSens, 25
+9	329	7	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	7		cmp 0, __D0turnSens, __signed_stack_001turnSens, __D0turnSens
+9	329	11	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	11		brtst 4, __ASM_Label_936, __D0turnSens
+9	329	14	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	14		set SensorLeft, 1
+9	329	17	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	329	17	#line 329 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	17	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	17	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	17		getin __signed_stack_001turnSens, rSensor, 4
+9	330	21	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	21	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	21		set __D0turnSens, 25
+9	330	24	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	24		cmp 0, __D0turnSens, __signed_stack_001turnSens, __D0turnSens
+9	330	28	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	28		brtst 4, __ASM_Label_941, __D0turnSens
+9	330	31	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	31		set SensorRight, 1
+9	330	34	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	330	34	#line 330 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	34	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	34	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	332	34		getin __signed_stack_001turnSens, bSensor, 4
+9	331	38	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	38	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	332	38		set __D0turnSens, 35
+9	331	41	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	332	41		cmp 0, __D0turnSens, __signed_stack_001turnSens, __D0turnSens
+9	331	45	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	332	45		brtst 4, __ASM_Label_946, __D0turnSens
+9	331	48	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	332	48		set SensorBack, 1
+9	331	51	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	331	51	#line 331 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	333	51	#line 333 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	333	51	#line 333 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	334	51		mov __DU0turnSens, SensorLeft
+9	334	53	#line 334 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	335	53		tst 5, __D0turnSens, __DU0turnSens
+9	334	56	#line 334 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	335	56		brtst 4, __ASM_Label_951, __D0turnSens
+9	334	59	#line 334 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	335	59		mov __DU0turnSens, SensorRight
+9	335	61	#line 335 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	336	61		tst 5, __D0turnSens, __DU0turnSens
+9	335	64	#line 335 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	336	64		brtst 4, __ASM_Label_954, __D0turnSens
+9	336	67	#line 336 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	337	67		set SensorLeft, 0
+9	336	70	#line 336 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	336	70	#line 336 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	337	70	#line 337 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	338	70		set SensorRight, 0
+9	337	73	#line 337 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	337	73	#line 337 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	338	73	#line 338 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	339	73		set SensorBack, 0
+9	338	76	#line 338 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	338	76	#line 338 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	339	76	#line 339 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	340	76		set __DU0turnSens, 1
+9	339	79	#line 339 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	339	79	#line 339 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	340	79		subret __turnSens_return
+9	339	81	#line 339 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	341	81	#line 341 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	343	81	#line 343 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	344	81		jmp __ASM_Label_963
+9	343	83	#line 343 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	344	83		mov __DU0turnSens, SensorRight
+9	344	85	#line 344 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	345	85		tst 5, __D0turnSens, __DU0turnSens
+9	344	88	#line 344 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	345	88		brtst 4, __ASM_Label_966, __D0turnSens
+9	344	91	#line 344 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	345	91		mov __DU0turnSens, SensorLeft
+9	345	93	#line 345 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	346	93		tst 5, __D0turnSens, __DU0turnSens
+9	345	96	#line 345 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	346	96		brtst 4, __ASM_Label_969, __D0turnSens
+9	346	99	#line 346 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	347	99		set SensorLeft, 0
+9	346	102	#line 346 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	346	102	#line 346 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	347	102	#line 347 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	348	102		set SensorRight, 0
+9	347	105	#line 347 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	347	105	#line 347 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	348	105	#line 348 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	349	105		set SensorBack, 0
+9	348	108	#line 348 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	348	108	#line 348 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	349	108	#line 349 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	350	108		set __DU0turnSens, 1
+9	349	111	#line 349 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	349	111	#line 349 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	350	111		subret __turnSens_return
+9	349	113	#line 349 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	350	113	#line 350 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	351	113	#line 351 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	352	113		jmp __ASM_Label_978
+9	352	115	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	353	115		set __DU0turnSens, 0
+9	352	118	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	352	118	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	353	118		subret __turnSens_return
+9	352	120	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	352	120	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	352	120	#line 352 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	355	120	#line 355 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+9	356	120		subret __turnSens_return
+10	357	0	#line 357 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	358	0	#pragma macro 7
+10	358	0		setout __OUT_AB, 0, __constVal64
+10	7341	5	#line 7341 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	357	5	#line 357 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	357	5	#line 357 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	358	5		set __Wait_7qG2_ms_7qG2_000_inline_lTurn, 1
+10	357	8	#line 357 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	8551	8	#line 8551 "NXCDefs.h"
+10	8552	8		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_lTurn
+10	8551	11	#line 8551 "NXCDefs.h"
+10	358	11	#line 358 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	359	11	#line 359 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	360	11		set __lTurn_7qG2_initRot_7qG2_000, 0
+10	359	14	#line 359 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	360	14	#line 360 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	361	14		set __lTurn_7qG2_found_7qG2_000, 0
+10	360	17	#line 360 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	361	17	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	362	17		set __lTurn_7qG2_initRotNum_7qG2_000, 150
+10	361	20	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	361	20	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	362	20		mov __signed_stack_001lTurn, __lTurn_7qG2_numRot_7qG2_000
+10	361	22	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	361	22	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	362	22		set __D0lTurn, 2
+10	361	25	#line 361 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	362	25		cmp 4, __D0lTurn, __signed_stack_001lTurn, __D0lTurn
+10	362	29	#line 362 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	363	29		brtst 4, __ASM_Label_991, __D0lTurn
+10	363	32	#line 363 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	364	32		set __lTurn_7qG2_initRotNum_7qG2_000, 416
+10	363	35	#line 363 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	363	35	#line 363 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	366	35	#line 366 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	366	35	#line 366 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	367	35		set __powerMotors_7qG2_dir_7qG2_000, 1
+10	366	38	#line 366 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	366	38	#line 366 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	367	38		set __powerMotors_7qG2_pwr_7qG2_000, 100
+10	366	41	#line 366 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	367	41	#line 367 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	368	41		subcall powerMotors, __powerMotors_return
+10	367	43	#line 367 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	368	43		mov __D0lTurn, __D0powerMotors
+10	367	45	#line 367 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	367	45	#line 367 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	368	45		mov __DU0lTurn, __lTurn_7qG2_initRot_7qG2_000
+10	367	47	#line 367 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	368	47		not __DU0lTurn, __DU0lTurn
+10	368	50	#line 368 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	369	50		tst 5, __D0lTurn, __DU0lTurn
+10	368	53	#line 368 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	369	53		brtst 4, __ASM_Label_999, __D0lTurn
+10	368	56	#line 368 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	369	56		mov __readRotation_7qG2_thresh_7qG2_000, __lTurn_7qG2_initRotNum_7qG2_000
+10	368	58	#line 368 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	369	58	#line 369 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	370	58		subcall readRotation, __readRotation_return
+10	369	60	#line 369 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	370	60		mov __lTurn_7qG2_initRot_7qG2_000, __DU0readRotation
+10	369	62	#line 369 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	369	62	#line 369 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	370	62	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	371	62		jmp __ASM_Label_998
+10	370	64	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	370	64	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	371	64		set __powerMotors_7qG2_dir_7qG2_000, 1
+10	370	67	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	370	67	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	371	67		set __powerMotors_7qG2_pwr_7qG2_000, 30
+10	370	70	#line 370 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	371	70	#line 371 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	372	70		subcall powerMotors, __powerMotors_return
+10	371	72	#line 371 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	372	72		mov __D0lTurn, __D0powerMotors
+10	371	74	#line 371 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	371	74	#line 371 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	372	74		mov __DU0lTurn, __lTurn_7qG2_found_7qG2_000
+10	371	76	#line 371 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	372	76		not __DU0lTurn, __DU0lTurn
+10	372	79	#line 372 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	373	79		tst 5, __D0lTurn, __DU0lTurn
+10	372	82	#line 372 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	373	82		brtst 4, __ASM_Label_1011, __D0lTurn
+10	373	85	#line 373 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	374	85		subcall turnSens, __turnSens_return
+10	373	87	#line 373 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	374	87		mov __lTurn_7qG2_found_7qG2_000, __DU0turnSens
+10	373	89	#line 373 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	373	89	#line 373 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	374	89	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	89		jmp __ASM_Label_1010
+10	374	91	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	374	91	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	91		set __powerMotors_7qG2_dir_7qG2_000, 2
+10	374	94	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	374	94	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	94		set __powerMotors_7qG2_pwr_7qG2_000, 50
+10	374	97	#line 374 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	97	#line 375 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	376	97		subcall powerMotors, __powerMotors_return
+10	375	99	#line 375 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	99	#line 375 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	375	99	#line 375 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	376	99		set __Wait_7qG2_ms_7qG2_000_inline_lTurn, 110
+10	375	102	#line 375 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	8551	102	#line 8551 "NXCDefs.h"
+10	8552	102		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_lTurn
+10	8551	105	#line 8551 "NXCDefs.h"
+10	376	105	#line 376 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	377	105	#line 377 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	378	105	#pragma macro 7
+10	378	105		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	7502	128	#line 7502 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	377	128	#line 377 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	379	128	#line 379 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+10	380	128		subret __lTurn_return
+11	381	0	#line 381 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	382	0	#pragma macro 7
+11	382	0		setout __OUT_AB, 0, __constVal64
+11	7514	5	#line 7514 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	381	5	#line 381 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	381	5	#line 381 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	382	5		set __Wait_7qG2_ms_7qG2_000_inline_rTurn, 1
+11	381	8	#line 381 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	8551	8	#line 8551 "NXCDefs.h"
+11	8552	8		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rTurn
+11	8551	11	#line 8551 "NXCDefs.h"
+11	382	11	#line 382 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	383	11	#line 383 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	384	11		set __rTurn_7qG2_initRot_7qG2_000, 0
+11	383	14	#line 383 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	384	14	#line 384 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	385	14		set __rTurn_7qG2_found_7qG2_000, 0
+11	384	17	#line 384 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	385	17	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	386	17		set __rTurn_7qG2_initRotNum_7qG2_000, 150
+11	385	20	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	385	20	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	386	20		mov __signed_stack_001rTurn, __rTurn_7qG2_numRot_7qG2_000
+11	385	22	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	385	22	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	386	22		set __D0rTurn, 2
+11	385	25	#line 385 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	386	25		cmp 4, __D0rTurn, __signed_stack_001rTurn, __D0rTurn
+11	386	29	#line 386 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	387	29		brtst 4, __ASM_Label_1032, __D0rTurn
+11	387	32	#line 387 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	388	32		set __rTurn_7qG2_initRotNum_7qG2_000, 416
+11	387	35	#line 387 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	387	35	#line 387 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	389	35	#line 389 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	389	35	#line 389 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	390	35		set __powerMotors_7qG2_dir_7qG2_000, 2
+11	389	38	#line 389 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	389	38	#line 389 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	390	38		set __powerMotors_7qG2_pwr_7qG2_000, 100
+11	389	41	#line 389 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	390	41	#line 390 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	391	41		subcall powerMotors, __powerMotors_return
+11	390	43	#line 390 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	391	43		mov __D0rTurn, __D0powerMotors
+11	390	45	#line 390 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	390	45	#line 390 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	391	45		mov __DU0rTurn, __rTurn_7qG2_initRot_7qG2_000
+11	390	47	#line 390 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	391	47		not __DU0rTurn, __DU0rTurn
+11	391	50	#line 391 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	392	50		tst 5, __D0rTurn, __DU0rTurn
+11	391	53	#line 391 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	392	53		brtst 4, __ASM_Label_1040, __D0rTurn
+11	391	56	#line 391 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	392	56		set __readRotation_7qG2_thresh_7qG2_000, 416
+11	391	59	#line 391 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	392	59	#line 392 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	393	59		subcall readRotation, __readRotation_return
+11	392	61	#line 392 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	393	61		mov __rTurn_7qG2_initRot_7qG2_000, __DU0readRotation
+11	392	63	#line 392 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	392	63	#line 392 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	393	63	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	394	63		jmp __ASM_Label_1039
+11	393	65	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	393	65	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	394	65		set __powerMotors_7qG2_dir_7qG2_000, 2
+11	393	68	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	393	68	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	394	68		set __powerMotors_7qG2_pwr_7qG2_000, 30
+11	393	71	#line 393 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	394	71	#line 394 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	395	71		subcall powerMotors, __powerMotors_return
+11	394	73	#line 394 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	395	73		mov __D0rTurn, __D0powerMotors
+11	394	75	#line 394 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	394	75	#line 394 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	395	75		mov __DU0rTurn, __rTurn_7qG2_found_7qG2_000
+11	394	77	#line 394 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	395	77		not __DU0rTurn, __DU0rTurn
+11	395	80	#line 395 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	396	80		tst 5, __D0rTurn, __DU0rTurn
+11	395	83	#line 395 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	396	83		brtst 4, __ASM_Label_1052, __D0rTurn
+11	396	86	#line 396 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	397	86		subcall turnSens, __turnSens_return
+11	396	88	#line 396 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	397	88		mov __rTurn_7qG2_found_7qG2_000, __DU0turnSens
+11	396	90	#line 396 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	396	90	#line 396 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	397	90	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	90		jmp __ASM_Label_1051
+11	397	92	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	397	92	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	92		set __powerMotors_7qG2_dir_7qG2_000, 1
+11	397	95	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	397	95	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	95		set __powerMotors_7qG2_pwr_7qG2_000, 50
+11	397	98	#line 397 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	98	#line 398 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	399	98		subcall powerMotors, __powerMotors_return
+11	398	100	#line 398 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	100	#line 398 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	398	100	#line 398 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	399	100		set __Wait_7qG2_ms_7qG2_000_inline_rTurn, 110
+11	398	103	#line 398 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	8551	103	#line 8551 "NXCDefs.h"
+11	8552	103		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rTurn
+11	8551	106	#line 8551 "NXCDefs.h"
+11	399	106	#line 399 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	400	106	#line 400 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	401	106	#pragma macro 7
+11	401	106		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	7673	129	#line 7673 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	400	129	#line 400 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	402	129	#line 402 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+11	403	129		subret __rTurn_return
+12	403	0	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	0		set __Executor_7qG2_i_7qG2_001, 0
+12	403	3	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	403	3	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	3		mov __signed_stack_001Executor, __Executor_7qG2_i_7qG2_001
+12	403	5	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	403	5	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	5		strcat __strbufExecutor, readCmdList
+12	403	9	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	9		mov __strlen_7qG2_str_7qG2_000_inline_Executor, __strbufExecutor
+12	20247	11	#line 20247 "NXCDefs.h"
+12	20248	11		arrsize __D0strlen_inline_Executor, __strlen_7qG2_str_7qG2_000_inline_Executor
+12	20248	14		sub __D0Executor, __D0strlen_inline_Executor, __constVal1
+12	20247	18	#line 20247 "NXCDefs.h"
+12	403	18	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	403	18	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	18		cmp 2, __D0Executor, __signed_stack_001Executor, __D0Executor
+12	403	22	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	22		brtst 4, __ASM_Label_1064, __D0Executor
+12	403	25	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	25		jmp __ASM_Label_1065
+12	403	27	#line 403 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	27		add __Executor_7qG2_i_7qG2_001, __Executor_7qG2_i_7qG2_001, __constVal1
+12	404	31	#line 404 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	405	31		jmp __ASM_Label_1063
+12	404	33	#line 404 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	405	33		strcat __strbufExecutor, readCmdList
+12	404	37	#line 404 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	405	37		mov __signed_stack_001Executor, __Executor_7qG2_i_7qG2_001
+12	404	39	#line 404 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	404	39	#line 404 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	405	39		set __D0Executor, 1
+12	405	42	#line 405 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	406	42		strsubset __strretvalExecutor, __strbufExecutor, __signed_stack_001Executor, __D0Executor
+12	405	47	#line 405 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	406	47		strcat __strbufExecutor, __strretvalExecutor
+12	405	51	#line 405 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	406	51		mov __Executor_7qG2_cmdCurrent_7qG2_002, __strbufExecutor
+12	405	53	#line 405 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	406	53		strcat __strbufExecutor, __Executor_7qG2_cmdCurrent_7qG2_002
+12	407	57		brcmp 4, __ASM_Label_1076, __constStr0014, __strbufExecutor
+12	408	61		brcmp 4, __ASM_Label_1079, __constStr0015, __strbufExecutor
+12	409	65		brcmp 4, __ASM_Label_1082, __constStr0016, __strbufExecutor
+12	410	69		brcmp 4, __ASM_Label_1083, __constStr0017, __strbufExecutor
+12	411	73		jmp __ASM_Label_1084
+12	407	75	#line 407 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	407	75	#line 407 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	408	75		set __oneSquare_7qG2_numOfSquares_7qG2_000, 2
+12	407	78	#line 407 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	408	78	#line 408 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	409	78		subcall oneSquare, __oneSquare_return
+12	408	80	#line 408 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	409	80	#line 409 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	410	80		jmp __ASM_Label_1075
+12	409	82	#line 409 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	410	82	#line 410 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	411	82	#line 411 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	412	82		subcall revSquare, __revSquare_return
+12	411	84	#line 411 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	411	84	#line 411 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	412	84		set __lTurn_7qG2_numRot_7qG2_000, 2
+12	411	87	#line 411 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	412	87	#line 412 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	413	87		subcall lTurn, __lTurn_return
+12	412	89	#line 412 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	413	89	#line 413 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	414	89		jmp __ASM_Label_1075
+12	413	91	#line 413 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	414	91	#line 414 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	415	91	#line 415 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	416	91		mov __lTurn_7qG2_numRot_7qG2_000, __constVal1
+12	415	93	#line 415 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	416	93		subcall lTurn, __lTurn_return
+12	415	95	#line 415 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	416	95	#line 416 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	417	95		jmp __ASM_Label_1075
+12	416	97	#line 416 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	417	97	#line 417 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	418	97	#line 418 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	419	97		mov __rTurn_7qG2_numRot_7qG2_000, __constVal1
+12	418	99	#line 418 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	419	99		subcall rTurn, __rTurn_return
+12	418	101	#line 418 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	419	101	#line 419 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	420	101		jmp __ASM_Label_1075
+12	419	103	#line 419 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	420	103	#line 420 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	421	103	#line 421 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	422	103	#pragma macro 7
+12	422	103		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	7801	126	#line 7801 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	421	126	#line 421 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	422	126	#line 422 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	422	126	#line 422 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	423	126	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	423	126	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	424	126		set __signed_stack_001Executor, 100
+12	423	129	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	423	129	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	424	129		set __signed_stack_002Executor, 100
+12	423	132	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	423	132	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	424	132		set __signed_stack_003Executor, 4
+12	423	135	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	423	135	#line 423 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	424	135		set __D0Executor, 0
+12	424	138	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	138		acquire __SPTArgsMutex
+12	424	139	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	139		mov __SPTArgs.Frequency, __signed_stack_001Executor
+12	424	141	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	141		mov __SPTArgs.Duration, __signed_stack_002Executor
+12	424	143	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	143		mov __SPTArgs.Volume, __signed_stack_003Executor
+12	424	145	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	145		mov __SPTArgs.Loop, __D0Executor
+12	424	147	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	147		syscall 10, __SPTArgs
+12	424	150	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	150		mov __D0Executor, __SPTArgs.Result
+12	424	152	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	152		release __SPTArgsMutex
+12	424	153	#line 424 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	425	153	#line 425 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	426	153		strcat __strbufExecutor, __constStr0018
+12	425	157	#line 425 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	426	157		mov __Executor_7qG2_cmdCurrent_7qG2_002, __strbufExecutor
+12	425	159	#line 425 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	426	159	#line 426 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	427	159	#pragma macro 7
+12	427	159		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	7851	182	#line 7851 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	426	182	#line 426 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	428	182	#line 428 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	429	182		jmp __ASM_Label_1066
+12	428	184	#line 428 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	428	184	#line 428 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+12	429	184		subret __Executor_return
+13	437	0	#line 437 "C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC"
+13	438	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	setupNXT	22	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+3	powerMotors	176	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+4	followLine	560	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+5	readRotation	757	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+6	smallAdvance	811	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+7	oneSquare	857	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+8	revSquare	1072	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+9	turnSens	1184	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+10	lTurn	1306	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+11	rTurn	1436	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+12	Executor	1567	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC
+13	__initialize_global_data	1753	C:\Users\Jens Andersen\Documents\GitHub\AI-Lego-Robot\OneSquare\squareAdvance3.NXC

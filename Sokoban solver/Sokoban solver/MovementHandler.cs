@@ -35,44 +35,73 @@ namespace Sokoban_solver
             {
                 case "F":
                     NewPosistion[0]--;
-                    if (IsMoveValid(NewPosistion, direction))
+                    switch (IsMoveValid(NewPosistion, direction))
                     {
-                        updateMap(oldPosistion, NewPosistion);
-                        posistion = (int[])NewPosistion.Clone();
-                        Moves += "F";
+                        case "t":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "f";
+                            break;
+                        case "D":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "F";
+                            break;
                     }
 
                     break;
 
                 case "B":
                     NewPosistion[0]++;
-                    if (IsMoveValid(NewPosistion, direction))
+                    switch (IsMoveValid(NewPosistion, direction))
                     {
-                        updateMap(oldPosistion, NewPosistion);
-                        posistion = (int[])NewPosistion.Clone();
-                        Moves += "B";
+                        case "t":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "b";
+                            break;
+                        case "D":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "B";
+                            break;
                     }
+
 
                     break;
 
                 case "R":
                     NewPosistion[1]++;
-                    if (IsMoveValid(NewPosistion, direction))
+                    switch (IsMoveValid(NewPosistion, direction))
                     {
-                        updateMap(oldPosistion, NewPosistion);
-                        posistion = (int[])NewPosistion.Clone();
-                        Moves += "R";
+                        case "t":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "r";
+                            break;
+                        case "D":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "R";
+                            break;
                     }
 
                     break;
 
                 case "L":
                     NewPosistion[1]--;
-                    if (IsMoveValid(NewPosistion, direction))
+                    switch (IsMoveValid(NewPosistion, direction))
                     {
-                        updateMap(oldPosistion, NewPosistion);
-                        posistion = (int[])NewPosistion.Clone();
-                        Moves += "L";
+                        case "t":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "l";
+                            break;
+                        case "D":
+                            updateMap(oldPosistion, NewPosistion);
+                            posistion = (int[])NewPosistion.Clone();
+                            Moves += "L";
+                            break;
                     }
 
                     break;
@@ -115,20 +144,24 @@ namespace Sokoban_solver
 
 
 
-        private bool IsMoveValid(int[] NewPosistion, string direction)
+        private string IsMoveValid(int[] NewPosistion, string direction)
         {
             switch (readMap(NewPosistion))
             {
                 case "+":
-                    return true;
+                    return "t";
                 case "W":
-                    return false;
+                    return "f";
                 case "D":
-                    return canDiamondMove(direction);
+                    if (canDiamondMove(direction))
+                    {
+                        return "D";
+                    }
+                    return "f";
                 case "G":
-                    return true;
+                    return "t";
                 default:
-                    return false;
+                    return "f";
             }
         }
 
@@ -264,7 +297,7 @@ namespace Sokoban_solver
             return readMap(readPosistion);
         }
 
-        public bool TestIsMoveValid(int[] readPosistion, string dire)
+        public string TestIsMoveValid(int[] readPosistion, string dire)
         {
             return IsMoveValid(readPosistion, dire);
         }
