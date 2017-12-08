@@ -14,7 +14,20 @@
 // B 59 -> 29
 // L 50 -> 35
 // R 53 -> 19
-
+/*  N
+   33        45
+   34        30
+   42        58
+   
+  E
+             65   37
+             65   58
+             59   59
+  W
+  12         47
+  19         44
+  37            62
+                      */
 
 const byte bSensor = IN_4;
 const byte lSensor = IN_1;
@@ -24,9 +37,9 @@ const byte canSensor = IN_3;
 const byte rMotor  = OUT_A;
 const byte lMotor  = OUT_B;
 
-const int Black1 = 30;
-const int Black2 = 30;
-const int Black4 = 40;
+const int Black1 = 40;
+const int Black2 = 40;
+const int Black4 = 45;
 
 const long sqUnit    = 630;
 const long lhTurn    = 266.25; // 0.425 * 630 - 90 degree turn
@@ -44,7 +57,7 @@ bool SensorBack = false;
 
 // Executor Code
 string cmdList="Path.dat" ;
-string readCmdList = "sFFFL" ;
+string readCmdList = "sLsLsRsRsRssLLssRRsLsLsLL" ;
 
 void setupNXT(){
      SetSensorLight(bSensor);
@@ -161,7 +174,7 @@ void smallAdvance(){
      bool finish = false;
      powerMotors(0,50);
      while(!finish){
-        finish = readRotation(200);
+        finish = readRotation(170);
      }
 
 }
@@ -191,14 +204,18 @@ void oneSquare(bool canPresent = false){  // true = fwds, false = back
      //bool canPresent = Sensor(canSensor);
      bool finished = false;
 
-     powerMotors(0, 75);
+     powerMotors(0, 100);
      Wait(200);
-
+     int pwr = 90;
 	if(!canPresent){
 	while(!finished){
     dispSens();
-		followLine(80);
-		if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20) ){
+    if(Sensor(bSensor) > Black4)
+       pwr = 40;
+    else
+        pwr = 90;
+		followLineNw(pwr);
+		if((Sensor(lSensor) < Black1) && (Sensor(rSensor) < Black2) ){
 			finished = true;
 		}else{
 			finished = readRotation(730);
@@ -235,9 +252,9 @@ void revSquare(){
 	while(!finished){
   PlayTone(2500, 2000);
 		followLineNw(50);
-		if((Sensor(lSensor) < 20) && (Sensor(rSensor) < 20) ){
+		if((Sensor(lSensor) < Black1) && (Sensor(rSensor) < Black2) ){
 			finished = true;
-			
+
 		}else
         finished = readRotation(470);
 	}
@@ -297,9 +314,9 @@ void lTurn(int numRot = 1){
 	Wait(1);
 	bool initRot = false;
 	bool found = false;
-	int initRotNum = 150;
+	int initRotNum = 180;
   if (numRot ==2){           //for 180 degree turns
-   initRotNum = lhTurn+150;
+   initRotNum = lhTurn+130;
   }
 
 
@@ -322,9 +339,9 @@ void rTurn(int numRot = 1){
 	Wait(1);
 	bool initRot = false;
 	bool found = false;
-	int initRotNum = 150;
+	int initRotNum = 180;
   if (numRot ==2){           //for 180 degree turns
-   initRotNum = lhTurn+150;
+   initRotNum = lhTurn+130;
   }
 
 	powerMotors(2, 90);
@@ -359,7 +376,6 @@ void Executor(){
 
       case "s" :
            oneSquare();
-
 				break;
 
 			case "B" :
@@ -391,10 +407,9 @@ void Executor(){
 				Wait(SEC_2);
 				break;
     }
-    //PlayTone(1000, 500);
-    //cmdCurrent=cmdNxt;
     Off(OUT_AB);
-   Wait(100);
+
+   Wait(50);
    if (MoveO){
       i++;
       MoveO = false;
@@ -403,12 +418,8 @@ void Executor(){
 }
 task main(){
 	setupNXT();
-/*	while(1){
-  dispSens();
-  oneSquare();
-  lTurn();
-  }  */
 
  getPath(cmdList);
-  Executor();
+  //while(1){
+  Executor();//}
 }
